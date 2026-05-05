@@ -183,17 +183,32 @@ function initPortfolioFilter() {
   });
 
   // Hamburger
-  const hamburger = document.getElementById('hamburger');
-  const navLinks = document.getElementById('navLinks');
+  const hamburger   = document.getElementById('hamburger');
+  const navLinks    = document.getElementById('navLinks');
+  const menuOverlay = document.getElementById('menuOverlay');
+  const MOBILE      = 700;
+
   function closeMenu() {
-    navLinks.classList.remove('open');
+    menuOverlay.classList.remove('open');
     hamburger.classList.remove('open');
     hamburger.setAttribute('aria-expanded', false);
     document.body.style.overflow = '';
   }
 
+  // Move nav-links to the right parent depending on screen width
+  function handleResize() {
+    if (window.innerWidth <= MOBILE) {
+      if (!menuOverlay.contains(navLinks)) menuOverlay.appendChild(navLinks);
+    } else {
+      if (menuOverlay.contains(navLinks)) navbar.insertBefore(navLinks, hamburger);
+      closeMenu();
+    }
+  }
+  window.addEventListener('resize', handleResize);
+  handleResize();
+
   hamburger.addEventListener('click', () => {
-    const open = navLinks.classList.toggle('open');
+    const open = menuOverlay.classList.toggle('open');
     hamburger.classList.toggle('open', open);
     hamburger.setAttribute('aria-expanded', open);
     document.body.style.overflow = open ? 'hidden' : '';
