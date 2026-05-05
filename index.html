@@ -54,13 +54,25 @@
     <span class="nav-logo-text">Dr. Dildora <span>Xasanovna</span></span>
   </a>
   <ul class="nav-links" id="navLinks" role="list">
-    <li><a href="#about">Haqida</a></li>
-    <li><a href="#specializations">Mutaxassislik</a></li>
-    <li><a href="#experience">Tajriba</a></li>
-    <li><a href="#services">Xizmatlar</a></li>
+    <li><a href="#about" data-i18n="nav.about">Haqida</a></li>
+    <li><a href="#specializations" data-i18n="nav.spec">Mutaxassislik</a></li>
+    <li><a href="#experience" data-i18n="nav.exp">Tajriba</a></li>
+    <li><a href="#services" data-i18n="nav.services">Xizmatlar</a></li>
     <li><a href="#portfolio">Portfolio</a></li>
-    <li><a href="#contact" class="nav-cta">Qabulga yozilish</a></li>
+    <li><a href="#contact" class="nav-cta" data-i18n="nav.cta">Qabulga yozilish</a></li>
   </ul>
+  <div class="nav-controls">
+    <div class="lang-switcher" role="group" aria-label="Til tanlash">
+      <button class="lang-btn active" data-lang="uz">UZ</button>
+      <button class="lang-btn" data-lang="ru">RU</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+    <button class="theme-toggle" id="themeToggle" aria-label="Temani o'zgartirish">
+      <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+      </svg>
+    </button>
+  </div>
   <button class="hamburger" id="hamburger" aria-label="Menyuni ochish" aria-expanded="false">
     <div class="bar"><span></span><span></span><span></span></div>
   </button>
@@ -79,12 +91,12 @@
     <div class="hero-particle" style="width:4px;height:4px;left:40%;top:85%;animation-delay:0.5s"></div>
   </div>
   <div class="hero-content">
-    <div class="hero-badge" role="text">Endokrinolog · Toshkent</div>
-    <h1 class="hero-title">Sog'ligingiz —<br><em>mening ustunligim</em></h1>
-    <p class="hero-subtitle">Dr. Dildora Xasanovna — 10 yillik tajribaga ega endokrinolog. Diabet, qalqonsimon bez va gormonal buzilishlar bo'yicha mutaxassis.</p>
+    <div class="hero-badge" role="text" data-i18n="hero.badge">Endokrinolog · Toshkent</div>
+    <h1 class="hero-title" data-i18n-html="hero.title">Sog'ligingiz —<br><em>mening ustunligim</em></h1>
+    <p class="hero-subtitle" data-i18n="hero.subtitle">Dr. Dildora Xasanovna — 10 yillik tajribaga ega endokrinolog. Diabet, qalqonsimon bez va gormonal buzilishlar bo'yicha mutaxassis.</p>
     <div class="hero-btns">
-      <a href="#contact" class="btn-primary">Qabulga yozilish</a>
-      <a href="#about" class="btn-outline">Batafsil</a>
+      <a href="#contact" class="btn-primary" data-i18n="nav.cta">Qabulga yozilish</a>
+      <a href="#about" class="btn-outline" data-i18n="hero.more">Batafsil</a>
     </div>
   </div>
   <div class="hero-visual" aria-hidden="true">
@@ -105,19 +117,19 @@
 <div id="stats" role="region" aria-label="Statistika">
   <div class="stat-item reveal">
     <span class="stat-num" data-target="10">0</span><span class="stat-plus">+</span>
-    <div class="stat-label">Yillik tajriba</div>
+    <div class="stat-label" data-i18n="stats.years">Yillik tajriba</div>
   </div>
   <div class="stat-item reveal reveal-delay-1">
     <span class="stat-num" data-target="2000">0</span><span class="stat-plus">+</span>
-    <div class="stat-label">Bemorlar</div>
+    <div class="stat-label" data-i18n="stats.patients">Bemorlar</div>
   </div>
   <div class="stat-item reveal reveal-delay-2">
     <span class="stat-num" data-target="95">0</span><span class="stat-plus">%</span>
-    <div class="stat-label">Bemorlar mamnuniyati</div>
+    <div class="stat-label" data-i18n="stats.satisfaction">Bemorlar mamnuniyati</div>
   </div>
   <div class="stat-item reveal reveal-delay-3">
     <span class="stat-num" data-target="50">0</span><span class="stat-plus">+</span>
-    <div class="stat-label">Ilmiy maqolalar</div>
+    <div class="stat-label" data-i18n="stats.pubs">Ilmiy maqolalar</div>
   </div>
 </div>
 
@@ -135,11 +147,11 @@
       </div>
     </div>
     <div class="about-content">
-      <div class="section-tag reveal">Shifokor haqida</div>
-      <h2 class="section-title reveal reveal-delay-1" id="about-heading">Siz bilan — har bir <em>qadam</em></h2>
-      <blockquote class="reveal reveal-delay-2">"Har bir bemor — bu alohida dunyo. Mening vazifam — shu dunyoni tushunib, to'g'ri yo'l ko'rsatish."</blockquote>
-      <p class="reveal reveal-delay-2">Dr. Dildora Xasanovna — Toshkent tibbiyot akademiyasini tamomlagan va endokrinologiya bo'yicha 10 yildan ortiq klinik tajribaga ega mutaxassis. U diabet, qalqonsimon bez kasalliklari va gormonal buzilishlarni davolashda keng tajribaga ega.</p>
-      <p class="reveal reveal-delay-3">Doimiy ravishda xalqaro konferensiyalarda ishtirok etib, zamonaviy davolash usullarini amaliyotga tatbiq etib keladi. 50 dan ortiq ilmiy maqolalari nashr etilgan.</p>
+      <div class="section-tag reveal" data-i18n="about.tag">Shifokor haqida</div>
+      <h2 class="section-title reveal reveal-delay-1" id="about-heading" data-i18n-html="about.title">Siz bilan — har bir <em>qadam</em></h2>
+      <blockquote class="reveal reveal-delay-2" data-i18n="about.quote">"Har bir bemor — bu alohida dunyo. Mening vazifam — shu dunyoni tushunib, to'g'ri yo'l ko'rsatish."</blockquote>
+      <p class="reveal reveal-delay-2" data-i18n="about.p1">Dr. Dildora Xasanovna — Toshkent tibbiyot akademiyasini tamomlagan va endokrinologiya bo'yicha 10 yildan ortiq klinik tajribaga ega mutaxassis. U diabet, qalqonsimon bez kasalliklari va gormonal buzilishlarni davolashda keng tajribaga ega.</p>
+      <p class="reveal reveal-delay-3" data-i18n="about.p2">Doimiy ravishda xalqaro konferensiyalarda ishtirok etib, zamonaviy davolash usullarini amaliyotga tatbiq etib keladi. 50 dan ortiq ilmiy maqolalari nashr etilgan.</p>
       <div class="about-pills reveal reveal-delay-4">
         <span class="pill">Toshkent tibbiyot akademiyasi</span>
         <span class="pill">Evropa endokrinologiya sertifikati</span>
@@ -153,9 +165,9 @@
 <!-- SPECIALIZATIONS -->
 <section id="specializations" role="region" aria-labelledby="spec-heading">
   <div style="text-align:center;max-width:600px;margin:0 auto;">
-    <div class="section-tag reveal">Mutaxassislik</div>
-    <h2 class="section-title reveal reveal-delay-1" id="spec-heading">Davolash <em>sohalari</em></h2>
-    <p class="section-lead reveal reveal-delay-2" style="margin:0 auto;">Zamonaviy tibbiyot usullaridan foydalangan holda keng qamrovli endokrinologik yordam ko'rsataman.</p>
+    <div class="section-tag reveal" data-i18n="spec.tag">Mutaxassislik</div>
+    <h2 class="section-title reveal reveal-delay-1" id="spec-heading" data-i18n-html="spec.title">Davolash <em>sohalari</em></h2>
+    <p class="section-lead reveal reveal-delay-2" style="margin:0 auto;" data-i18n="spec.lead">Zamonaviy tibbiyot usullaridan foydalangan holda keng qamrovli endokrinologik yordam ko'rsataman.</p>
   </div>
   <div class="spec-grid" role="list">
     <div class="spec-card reveal" role="listitem">
@@ -206,8 +218,8 @@
 <!-- EXPERIENCE -->
 <section id="experience" role="region" aria-labelledby="exp-heading">
   <div style="text-align:center;max-width:600px;margin:0 auto;">
-    <div class="section-tag reveal">Ta'lim va tajriba</div>
-    <h2 class="section-title reveal reveal-delay-1" id="exp-heading">Mening <em>yo'lim</em></h2>
+    <div class="section-tag reveal" data-i18n="exp.tag">Ta'lim va tajriba</div>
+    <h2 class="section-title reveal reveal-delay-1" id="exp-heading" data-i18n-html="exp.title">Mening <em>yo'lim</em></h2>
   </div>
   <div class="timeline" role="list">
     <div class="tl-item reveal" role="listitem">
@@ -261,9 +273,9 @@
 <!-- SERVICES -->
 <section id="services" role="region" aria-labelledby="svc-heading">
   <div style="text-align:center;max-width:600px;margin:0 auto;">
-    <div class="section-tag reveal">Xizmatlar</div>
-    <h2 class="section-title reveal reveal-delay-1" id="svc-heading">Nima <em>taklif etaman</em></h2>
-    <p class="section-lead reveal reveal-delay-2" style="margin:0 auto 0">Har bir bemor individual yondashuv va to'liq tibbiy xizmat oladi.</p>
+    <div class="section-tag reveal" data-i18n="nav.services">Xizmatlar</div>
+    <h2 class="section-title reveal reveal-delay-1" id="svc-heading" data-i18n-html="svc.title">Nima <em>taklif etaman</em></h2>
+    <p class="section-lead reveal reveal-delay-2" style="margin:0 auto 0" data-i18n="svc.lead">Har bir bemor individual yondashuv va to'liq tibbiy xizmat oladi.</p>
   </div>
   <div class="services-grid" role="list">
     <div class="service-card reveal" role="listitem">
@@ -316,16 +328,16 @@
   </div>
 
   <div class="portfolio-filters reveal" role="tablist" aria-label="Portfolio filtrlari">
-    <button class="pf-btn active" data-filter="all" role="tab" aria-selected="true">Barchasi</button>
-    <button class="pf-btn" data-filter="article" role="tab" aria-selected="false">Maqolalar</button>
-    <button class="pf-btn" data-filter="conference" role="tab" aria-selected="false">Konferensiyalar</button>
-    <button class="pf-btn" data-filter="award" role="tab" aria-selected="false">Mukofotlar</button>
+    <button class="pf-btn active" data-filter="all" role="tab" aria-selected="true" data-i18n="pf.all">Barchasi</button>
+    <button class="pf-btn" data-filter="article" role="tab" aria-selected="false" data-i18n="pf.article">Maqolalar</button>
+    <button class="pf-btn" data-filter="conference" role="tab" aria-selected="false" data-i18n="pf.conference">Konferensiyalar</button>
+    <button class="pf-btn" data-filter="award" role="tab" aria-selected="false" data-i18n="pf.award">Mukofotlar</button>
   </div>
 
   <div class="portfolio-grid" id="portfolioGrid" role="list"></div>
 
   <div style="text-align:center;margin-top:50px;" class="reveal">
-    <a href="#contact" class="btn-more-works">Hamkorlik uchun bog'laning →</a>
+    <a href="#contact" class="btn-more-works" data-i18n="pf.cta">Hamkorlik uchun bog'laning →</a>
   </div>
 </section>
 
@@ -374,9 +386,9 @@
 <section id="contact" role="region" aria-labelledby="contact-heading">
   <div class="contact-grid">
     <div>
-      <div class="section-tag reveal">Bog'lanish</div>
-      <h2 class="section-title reveal reveal-delay-1" id="contact-heading">Qabulga <em>yoziling</em></h2>
-      <p class="section-lead reveal reveal-delay-2">Birinchi qadamni bosing — sog'lig'ingiz uchun to'g'ri qaror.</p>
+      <div class="section-tag reveal" data-i18n="contact.tag">Bog'lanish</div>
+      <h2 class="section-title reveal reveal-delay-1" id="contact-heading" data-i18n-html="contact.title">Qabulga <em>yoziling</em></h2>
+      <p class="section-lead reveal reveal-delay-2" data-i18n="contact.lead">Birinchi qadamni bosing — sog'lig'ingiz uchun to'g'ri qaror.</p>
 
       <div class="contact-info-item reveal">
         <div class="contact-icon" aria-hidden="true">
@@ -417,38 +429,30 @@
     </div>
 
     <div class="contact-form reveal reveal-delay-2">
-      <h3>Qabul uchun ariza</h3>
+      <h3 data-i18n="form.title">Qabul uchun ariza</h3>
       <div class="form-row">
         <div class="form-group">
-          <label for="name">Ism familiya</label>
+          <label for="name" data-i18n="form.name">Ism familiya</label>
           <input type="text" id="name" name="name" placeholder="Abdullayev Ali" autocomplete="name" required>
         </div>
         <div class="form-group">
-          <label for="phone">Telefon</label>
+          <label for="phone" data-i18n="form.phone">Telefon</label>
           <input type="tel" id="phone" name="phone" placeholder="+998 90 000 00 00" autocomplete="tel" required>
         </div>
       </div>
       <div class="form-group">
-        <label for="service">Xizmat turi</label>
-        <select id="service" name="service">
-          <option value="">Tanlang...</option>
-          <option>Dastlabki qabul (60 daqiqa)</option>
-          <option>Takroriy qabul (30 daqiqa)</option>
-          <option>Gormonal tahlil izohi</option>
-          <option>Diabet boshqaruvi kursi</option>
-          <option>UZI natijasi izohi</option>
-          <option>Oziq-ovqat dasturi</option>
-        </select>
+        <label for="service" data-i18n="form.service">Xizmat turi</label>
+        <select id="service" name="service" data-i18n-select="form.services"></select>
       </div>
       <div class="form-group">
-        <label for="date">Qulay sana</label>
+        <label for="date" data-i18n="form.date">Qulay sana</label>
         <input type="date" id="date" name="date">
       </div>
       <div class="form-group">
-        <label for="message">Qo'shimcha ma'lumot</label>
-        <textarea id="message" name="message" placeholder="Shikoyat yoki savollaringizni yozing..."></textarea>
+        <label for="message" data-i18n="form.message">Qo'shimcha ma'lumot</label>
+        <textarea id="message" name="message" data-i18n-placeholder="form.messagePh" placeholder="Shikoyat yoki savollaringizni yozing..."></textarea>
       </div>
-      <button type="button" class="btn-submit" id="submitBtn" onclick="handleSubmit()">Arizani yuborish</button>
+      <button type="button" class="btn-submit" id="submitBtn" onclick="handleSubmit()" data-i18n="form.submit">Arizani yuborish</button>
     </div>
   </div>
 </section>

@@ -97,13 +97,16 @@ const icons = {
   award: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>`
 };
 
-function renderPortfolio(filter = 'all') {
+let currentFilter = 'all';
+
+function renderPortfolio(filter) {
+  if (filter !== undefined) currentFilter = filter;
   const grid = document.getElementById('portfolioGrid');
   if (!grid) return;
 
-  const filtered = filter === 'all'
+  const filtered = currentFilter === 'all'
     ? portfolioData
-    : portfolioData.filter(item => item.category === filter);
+    : portfolioData.filter(item => item.category === currentFilter);
 
   grid.innerHTML = filtered.map((item, index) => `
     <div class="portfolio-card reveal ${index > 0 ? 'reveal-delay-' + Math.min(index % 3 + 1, 5) : ''}"
@@ -124,10 +127,12 @@ function renderPortfolio(filter = 'all') {
   `).join('');
 
   // Re-observe new cards for scroll animation
-  grid.querySelectorAll('.reveal').forEach(el => {
-    el.classList.remove('visible');
-    observer.observe(el);
-  });
+  if (typeof observer !== 'undefined') {
+    grid.querySelectorAll('.reveal').forEach(el => {
+      el.classList.remove('visible');
+      observer.observe(el);
+    });
+  }
 }
 
 // Portfolio filter buttons
@@ -147,6 +152,168 @@ function initPortfolioFilter() {
     });
   });
 }
+
+// ─── TRANSLATIONS ───
+const translations = {
+  uz: {
+    'nav.about':'Haqida','nav.spec':'Mutaxassislik','nav.exp':'Tajriba',
+    'nav.services':'Xizmatlar','nav.cta':'Qabulga yozilish',
+    'hero.badge':'Endokrinolog · Toshkent',
+    'hero.title':'Sog\'ligingiz —<br><em>mening ustunligim</em>',
+    'hero.subtitle':'Dr. Dildora Xasanovna — 10 yillik tajribaga ega endokrinolog. Diabet, qalqonsimon bez va gormonal buzilishlar bo\'yicha mutaxassis.',
+    'hero.more':'Batafsil',
+    'stats.years':'Yillik tajriba','stats.patients':'Bemorlar',
+    'stats.satisfaction':'Bemorlar mamnuniyati','stats.pubs':'Ilmiy maqolalar',
+    'about.tag':'Shifokor haqida',
+    'about.title':'Siz bilan — har bir <em>qadam</em>',
+    'about.quote':'"Har bir bemor — bu alohida dunyo. Mening vazifam — shu dunyoni tushunib, to\'g\'ri yo\'l ko\'rsatish."',
+    'about.p1':'Dr. Dildora Xasanovna — Toshkent tibbiyot akademiyasini tamomlagan va endokrinologiya bo\'yicha 10 yildan ortiq klinik tajribaga ega mutaxassis. U diabet, qalqonsimon bez kasalliklari va gormonal buzilishlarni davolashda keng tajribaga ega.',
+    'about.p2':'Doimiy ravishda xalqaro konferensiyalarda ishtirok etib, zamonaviy davolash usullarini amaliyotga tatbiq etib keladi. 50 dan ortiq ilmiy maqolalari nashr etilgan.',
+    'spec.tag':'Mutaxassislik',
+    'spec.title':'Davolash <em>sohalari</em>',
+    'spec.lead':'Zamonaviy tibbiyot usullaridan foydalangan holda keng qamrovli endokrinologik yordam ko\'rsataman.',
+    'exp.tag':'Ta\'lim va tajriba','exp.title':'Mening <em>yo\'lim</em>',
+    'svc.title':'Nima <em>taklif etaman</em>',
+    'svc.lead':'Har bir bemor individual yondashuv va to\'liq tibbiy xizmat oladi.',
+    'contact.tag':'Bog\'lanish','contact.title':'Qabulga <em>yoziling</em>',
+    'contact.lead':'Birinchi qadamni bosing — sog\'lig\'ingiz uchun to\'g\'ri qaror.',
+    'form.title':'Qabul uchun ariza','form.name':'Ism familiya',
+    'form.phone':'Telefon','form.service':'Xizmat turi',
+    'form.date':'Qulay sana','form.message':'Qo\'shimcha ma\'lumot',
+    'form.messagePh':'Shikoyat yoki savollaringizni yozing...','form.submit':'Arizani yuborish',
+    'form.services':['Tanlang...','Dastlabki qabul (60 daqiqa)','Takroriy qabul (30 daqiqa)','Gormonal tahlil izohi','Diabet boshqaruvi kursi','UZI natijasi izohi','Oziq-ovqat dasturi'],
+    'pf.all':'Barchasi','pf.article':'Maqolalar','pf.conference':'Konferensiyalar','pf.award':'Mukofotlar',
+    'pf.cta':"Hamkorlik uchun bog'laning →",
+  },
+  ru: {
+    'nav.about':'О враче','nav.spec':'Специализация','nav.exp':'Опыт',
+    'nav.services':'Услуги','nav.cta':'Записаться',
+    'hero.badge':'Эндокринолог · Ташкент',
+    'hero.title':'Ваше здоровье —<br><em>мой приоритет</em>',
+    'hero.subtitle':'Д-р Дилдора Хасановна — эндокринолог с 10-летним опытом. Специалист по диабету, щитовидной железе и гормональным нарушениям.',
+    'hero.more':'Подробнее',
+    'stats.years':'Лет опыта','stats.patients':'Пациентов',
+    'stats.satisfaction':'Удовлетворённость','stats.pubs':'Публикаций',
+    'about.tag':'О враче',
+    'about.title':'Рядом с вами — каждый <em>шаг</em>',
+    'about.quote':'"Каждый пациент — отдельный мир. Моя задача — понять этот мир и указать верный путь."',
+    'about.p1':'Д-р Дилдора Хасановна окончила Ташкентскую медицинскую академию и имеет более 10 лет клинического опыта в эндокринологии. Широкая практика в лечении диабета, заболеваний щитовидной железы и гормональных нарушений.',
+    'about.p2':'Регулярно участвует в международных конференциях и внедряет современные методы лечения. Опубликовано более 50 научных статей.',
+    'spec.tag':'Специализация',
+    'spec.title':'Области <em>лечения</em>',
+    'spec.lead':'Оказываю комплексную эндокринологическую помощь с использованием современных методов медицины.',
+    'exp.tag':'Образование и опыт','exp.title':'Мой <em>путь</em>',
+    'svc.title':'Что я <em>предлагаю</em>',
+    'svc.lead':'Каждый пациент получает индивидуальный подход и полноценную медицинскую помощь.',
+    'contact.tag':'Контакты','contact.title':'Запишитесь <em>на приём</em>',
+    'contact.lead':'Сделайте первый шаг — правильное решение для вашего здоровья.',
+    'form.title':'Заявка на приём','form.name':'Имя и фамилия',
+    'form.phone':'Телефон','form.service':'Вид услуги',
+    'form.date':'Удобная дата','form.message':'Дополнительная информация',
+    'form.messagePh':'Опишите жалобы или задайте вопрос...','form.submit':'Отправить заявку',
+    'form.services':['Выберите...','Первичный приём (60 мин)','Повторный приём (30 мин)','Расшифровка гормонов','Курс ведения диабета','Расшифровка УЗИ','Диетическая программа'],
+    'pf.all':'Все','pf.article':'Статьи','pf.conference':'Конференции','pf.award':'Награды',
+    'pf.cta':'Связаться для сотрудничества →',
+  },
+  en: {
+    'nav.about':'About','nav.spec':'Specializations','nav.exp':'Experience',
+    'nav.services':'Services','nav.cta':'Book Appointment',
+    'hero.badge':'Endocrinologist · Tashkent',
+    'hero.title':'Your Health —<br><em>My Priority</em>',
+    'hero.subtitle':'Dr. Dildora Khasanova — Endocrinologist with 10+ years of experience. Specialist in diabetes, thyroid disorders & hormonal imbalances.',
+    'hero.more':'Learn More',
+    'stats.years':'Years Experience','stats.patients':'Patients Treated',
+    'stats.satisfaction':'Patient Satisfaction','stats.pubs':'Publications',
+    'about.tag':'About the Doctor',
+    'about.title':'With you — every <em>step</em>',
+    'about.quote':'"Every patient is a unique world. My mission is to understand that world and guide them on the right path."',
+    'about.p1':'Dr. Dildora Khasanova graduated from Tashkent Medical Academy and has over 10 years of clinical experience in endocrinology. She has extensive expertise treating diabetes, thyroid diseases, and hormonal disorders.',
+    'about.p2':'She regularly participates in international conferences and implements modern treatment methods. Over 50 scientific articles published.',
+    'spec.tag':'Specializations',
+    'spec.title':'Areas of <em>Treatment</em>',
+    'spec.lead':'I provide comprehensive endocrinological care using modern medical methods.',
+    'exp.tag':'Education & Experience','exp.title':'My <em>Journey</em>',
+    'svc.title':'What I <em>Offer</em>',
+    'svc.lead':'Each patient receives an individual approach and complete medical care.',
+    'contact.tag':'Contact','contact.title':'Book an <em>Appointment</em>',
+    'contact.lead':'Take the first step — the right decision for your health.',
+    'form.title':'Appointment Request','form.name':'Full Name',
+    'form.phone':'Phone','form.service':'Service Type',
+    'form.date':'Preferred Date','form.message':'Additional Information',
+    'form.messagePh':'Describe your complaints or ask a question...','form.submit':'Send Request',
+    'form.services':['Select...','Initial Consultation (60 min)','Follow-up (30 min)','Hormone Panel Review','Diabetes Management Program','Thyroid Ultrasound Review','Diet & Lifestyle Planning'],
+    'pf.all':'All','pf.article':'Articles','pf.conference':'Conferences','pf.award':'Awards',
+    'pf.cta':'Contact for Collaboration →',
+  }
+};
+
+let currentLang = localStorage.getItem('lang') || 'uz';
+
+function applyLang(lang) {
+  currentLang = lang;
+  localStorage.setItem('lang', lang);
+  const t = translations[lang];
+
+  // Plain text
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.dataset.i18n;
+    if (t[key] !== undefined) el.textContent = t[key];
+  });
+  // innerHTML (with <em> tags)
+  document.querySelectorAll('[data-i18n-html]').forEach(el => {
+    const key = el.dataset.i18nHtml;
+    if (t[key] !== undefined) el.innerHTML = t[key];
+  });
+  // Placeholders
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const key = el.dataset.i18nPlaceholder;
+    if (t[key] !== undefined) el.placeholder = t[key];
+  });
+  // Select options
+  document.querySelectorAll('[data-i18n-select]').forEach(sel => {
+    const key = sel.dataset.i18nSelect;
+    const opts = t[key];
+    if (!opts) return;
+    sel.innerHTML = opts.map((o, i) => `<option value="${i === 0 ? '' : o}">${o}</option>`).join('');
+  });
+
+  // HTML lang attribute
+  document.documentElement.lang = lang;
+
+  // Active button
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.lang === lang);
+  });
+
+  // Re-render portfolio with new lang data
+  renderPortfolio();
+}
+
+// Lang buttons
+document.querySelectorAll('.lang-btn').forEach(btn => {
+  btn.addEventListener('click', () => applyLang(btn.dataset.lang));
+});
+
+// ─── THEME ───
+const themeToggle = document.getElementById('themeToggle');
+const themeIcon  = document.getElementById('themeIcon');
+const MOON_SVG = `<circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>`;
+const SUN_SVG  = `<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>`;
+
+function applyTheme(theme) {
+  document.documentElement.setAttribute('data-theme', theme);
+  localStorage.setItem('theme', theme);
+  themeIcon.innerHTML = theme === 'dark' ? MOON_SVG : SUN_SVG;
+  themeToggle.setAttribute('aria-label', theme === 'dark' ? 'Light mode' : 'Dark mode');
+}
+
+themeToggle.addEventListener('click', () => {
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  applyTheme(isDark ? 'light' : 'dark');
+});
+
+// Init theme (no observer needed)
+applyTheme(localStorage.getItem('theme') || 'light');
 
   // Custom cursor
   const cursor = document.getElementById('cursor');
@@ -226,6 +393,7 @@ function initPortfolioFilter() {
   }, { threshold: 0.12 });
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
   initPortfolioFilter();
+  applyLang(currentLang); // observer tayyor bo'lgandan keyin chaqiriladi
 
   // Counter animation
   function animateCounter(el) {
