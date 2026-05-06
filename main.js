@@ -367,6 +367,7 @@ applyTheme(localStorage.getItem('theme') || 'light');
   function closeMenu() {
     menuOverlay.classList.remove('open');
     hamburger.classList.remove('open');
+    navbar.classList.remove('menu-open');
     hamburger.setAttribute('aria-expanded', false);
     document.body.style.overflow = '';
   }
@@ -386,6 +387,7 @@ applyTheme(localStorage.getItem('theme') || 'light');
   hamburger.addEventListener('click', () => {
     const open = menuOverlay.classList.toggle('open');
     hamburger.classList.toggle('open', open);
+    navbar.classList.toggle('menu-open', open);
     hamburger.setAttribute('aria-expanded', open);
     document.body.style.overflow = open ? 'hidden' : '';
   });
