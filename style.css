@@ -405,6 +405,7 @@
     position: absolute; inset: 0;
     width: 100%; height: 100%;
     object-fit: cover;
+    object-position: top center;
     opacity: 0;
     transition: opacity 0.6s ease;
   }
@@ -442,6 +443,7 @@
     position: absolute; bottom: 30px; right: -20px;
     background: white;
     border-radius: 16px; padding: 16px 22px;
+    z-index: 3;
     box-shadow: var(--shadow);
     text-align: center;
   }
@@ -724,7 +726,7 @@
     #hero { padding: 100px 30px 60px; }
     .hero-visual { display: none; }
     .about-grid { grid-template-columns: 1fr; gap: 50px; }
-    .about-photo-frame { aspect-ratio: 4/3; max-height: 300px; }
+    .about-photo-frame { aspect-ratio: 3/4; max-height: 600px; }
     .spec-grid { grid-template-columns: repeat(2, 1fr); }
     .services-grid { grid-template-columns: repeat(2, 1fr); }
     .contact-grid { grid-template-columns: 1fr; gap: 40px; }
@@ -752,8 +754,11 @@
   .menu-overlay .nav-links {
     display: flex; flex-direction: column;
     gap: 0; list-style: none; width: 100%;
+    order: 1;
   }
   .menu-overlay .nav-links a {
+    width: 100%;
+    display: inline-block;
     font-size: 1.15rem; padding: 16px 0;
     border-bottom: 1px solid var(--cream-dark);
     color: var(--charcoal); text-transform: uppercase;
@@ -761,8 +766,52 @@
   }
   .menu-overlay .nav-links a::after { display: none; }
   .menu-overlay .nav-links li:last-child a {
-    border-bottom: none; margin-top: 16px; text-align: center;
+    display: inline-block;
+    width: 100%;
+    border-bottom: none; margin-top: 36px; text-align: center;
   }
+  .mobile-controls {
+    display: flex; align-items: center; justify-content: space-between;
+    order: 2;
+    margin-top: 40px;
+    padding: 20px 24px;
+    background: var(--cream-dark);
+    border-radius: 16px;
+    width: 100%;
+  }
+  .mobile-lang-switcher {
+    display: flex; gap: 8px;
+  }
+  .mobile-lang-switcher .lang-btn {
+    padding: 8px 16px;
+    border-radius: 30px;
+    border: 1.5px solid rgba(0,0,0,0.08);
+    background: white;
+    font-size: 0.8rem; font-weight: 600;
+    color: #999; cursor: pointer;
+    transition: var(--transition);
+    letter-spacing: 0.05em;
+  }
+  .mobile-lang-switcher .lang-btn.active {
+    background: var(--teal); color: white; border-color: var(--teal);
+  }
+  .mobile-lang-switcher .lang-btn:hover:not(.active) {
+    border-color: var(--teal); color: var(--teal);
+  }
+  .mobile-theme-toggle {
+    width: 42px; height: 42px;
+    border-radius: 50%;
+    background: white;
+    border: 1.5px solid rgba(0,0,0,0.08);
+    color: var(--teal);
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  .mobile-theme-toggle:hover {
+    background: var(--teal); color: white; border-color: var(--teal);
+  }
+  .mobile-theme-toggle svg { width: 18px; height: 18px; }
 
   @media (max-width: 700px) {
     .hamburger { display: flex; }
@@ -775,6 +824,7 @@
     .stat-item { max-width: 50%; padding: 20px; }
     .form-row { grid-template-columns: 1fr; }
     .hero-btns { flex-direction: column; }
+    #hero { padding: 100px 30px 60px; }
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -919,6 +969,12 @@
   [data-theme="dark"] .about-badge-float { background: #1e2028; }
   [data-theme="dark"] .tl-dot { border-color: #12141a; }
   [data-theme="dark"] .service-duration { background: #1e2028; }
+  [data-theme="dark"] #stats { background: #0d0f14; }
+  [data-theme="dark"] #testimonials { background: #0d0f14; }
+  [data-theme="dark"] .menu-overlay .nav-links a { color: #e8e6e3; }
+  [data-theme="dark"] .mobile-controls { background: #1e2028; }
+  [data-theme="dark"] .mobile-lang-switcher .lang-btn { background: #2a2d38; color: #a0a8b8; border-color: #2a2d38; }
+  [data-theme="dark"] .mobile-theme-toggle { background: #2a2d38; border-color: #2a2d38; }
 
   /* ─── LANG SWITCHER + THEME TOGGLE ─── */
   .nav-controls {
@@ -967,7 +1023,7 @@
   .theme-toggle svg { width: 16px; height: 16px; transition: var(--transition); }
 
   @media (max-width: 700px) {
-    .nav-controls { margin-left: 8px; }
+    .nav-controls { display: none; }
     .lang-btn { padding: 4px 8px; font-size: 0.68rem; }
     .theme-toggle { width: 32px; height: 32px; }
   }

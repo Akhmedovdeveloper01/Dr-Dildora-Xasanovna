@@ -42,9 +42,6 @@
 <div class="cursor" id="cursor"></div>
 <div class="cursor-ring" id="cursorRing"></div>
 
-<!-- MOBILE MENU OVERLAY -->
-<div id="menuOverlay" class="menu-overlay"></div>
-
 <!-- NAVBAR -->
 <nav id="navbar" role="navigation" aria-label="Asosiy navigatsiya">
   <a class="nav-logo" href="#hero" aria-label="Dr. Dildora Xasanovna">
@@ -77,6 +74,22 @@
     <div class="bar"><span></span><span></span><span></span></div>
   </button>
 </nav>
+
+<!-- MOBILE MENU OVERLAY -->
+<div id="menuOverlay" class="menu-overlay">
+  <div class="mobile-controls">
+    <div class="mobile-lang-switcher">
+      <button class="lang-btn active" data-lang="uz">UZ</button>
+      <button class="lang-btn" data-lang="ru">RU</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+    <button class="theme-toggle mobile-theme-toggle" id="themeToggleMobile" aria-label="Temani o'zgartirish">
+      <svg id="themeIconMobile" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+      </svg>
+    </button>
+  </div>
+</div>
 
 <!-- HERO -->
 <section id="hero" role="banner">
