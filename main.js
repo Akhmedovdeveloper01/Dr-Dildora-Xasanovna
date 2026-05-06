@@ -484,6 +484,34 @@ applyTheme(localStorage.getItem('theme') || 'light');
     });
   }
 
+  // ─── ABOUT CAROUSEL ───
+  (function() {
+    const imgs  = document.querySelectorAll('.carousel-img');
+    const dots  = document.querySelectorAll('.carousel-dot');
+    const prev  = document.querySelector('.carousel-prev');
+    const next  = document.querySelector('.carousel-next');
+    if (!imgs.length) return;
+
+    let current = 0;
+    let timer;
+
+    function goTo(idx) {
+      imgs[current].classList.remove('active');
+      dots[current].classList.remove('active');
+      current = (idx + imgs.length) % imgs.length;
+      imgs[current].classList.add('active');
+      dots[current].classList.add('active');
+    }
+
+    function startAuto() { timer = setInterval(() => goTo(current + 1), 4000); }
+    function resetAuto()  { clearInterval(timer); startAuto(); }
+
+    prev.addEventListener('click', () => { goTo(current - 1); resetAuto(); });
+    next.addEventListener('click', () => { goTo(current + 1); resetAuto(); });
+    dots.forEach((d, i) => d.addEventListener('click', () => { goTo(i); resetAuto(); }));
+    startAuto();
+  })();
+
   // Smooth scroll for all anchor links
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {

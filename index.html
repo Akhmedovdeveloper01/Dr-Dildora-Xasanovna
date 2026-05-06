@@ -139,7 +139,18 @@
     <div class="about-visual reveal">
       <div class="about-deco" aria-hidden="true"></div>
       <div class="about-photo-frame" role="img" aria-label="Dr. Dildora Xasanovna portreti">
-        <div class="about-initials" aria-hidden="true">DX</div>
+        <div class="about-carousel">
+          <div class="carousel-track">
+            <img src="img/_USH2810.jpg" alt="Dr. Dildora Xasanovna" class="carousel-img active">
+            <img src="img/_USH2999.jpg" alt="Dr. Dildora Xasanovna" class="carousel-img">
+          </div>
+          <button class="carousel-btn carousel-prev" aria-label="Oldingi rasm">&#8249;</button>
+          <button class="carousel-btn carousel-next" aria-label="Keyingi rasm">&#8250;</button>
+          <div class="carousel-dots">
+            <span class="carousel-dot active"></span>
+            <span class="carousel-dot"></span>
+          </div>
+        </div>
       </div>
       <div class="about-badge-float" aria-hidden="true">
         <span class="abf-num">10+</span>
@@ -414,7 +425,7 @@
         </div>
         <div>
           <div class="contact-info-label">Manzil</div>
-          <div class="contact-info-value">Toshkent, Chilonzor tumani<br>"Salomatlik" tibbiyot markazi</div>
+          <div class="contact-info-value">Toshkent, Chilonzor tumani<br>"Complex Med klinikasi" </div>
         </div>
       </div>
       <div class="contact-info-item reveal reveal-delay-3">
@@ -457,6 +468,29 @@
   </div>
 </section>
 
+<!-- MAP -->
+<section id="map-section" role="region" aria-labelledby="map-heading">
+  <div style="text-align:center;max-width:600px;margin:0 auto 40px;">
+    <div class="section-tag reveal">Manzil</div>
+    <h2 class="section-title reveal reveal-delay-1" id="map-heading">Bizni <em>xaritada toping</em></h2>
+    <p class="section-lead reveal reveal-delay-2" style="margin:0 auto;">Toshkent, Chilonzor tumani — "Complex Med klinikasi"</p>
+  </div>
+  <div class="map-wrapper reveal">
+    <iframe
+      src="https://maps.google.com/maps?q=75RV%2B57P+Tashkent&z=17&output=embed"
+      width="100%" height="420"
+      style="border:0;border-radius:20px;display:block;"
+      allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Salomatlik tibbiyot markazi manzili">
+    </iframe>
+    <a href="https://maps.app.goo.gl/gDVRov6oBf4AxbdL8" target="_blank" rel="noopener" class="map-open-btn">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      Google Maps da ochish
+    </a>
+  </div>
+</section>
+
 <!-- FOOTER -->
 <footer role="contentinfo">
   <div class="footer-grid">
@@ -469,14 +503,11 @@
       </a>
       <p>Toshkentdagi tajribali endokrinolog. Sog'lig'ingiz uchun to'g'ri qaror — bu yerdan boshlanadi.</p>
       <div class="social-links" style="margin-top:20px;">
-        <a href="#" class="social-link" aria-label="Instagram">
+        <a href="https://instagram.com/dr.endokrinolog.dildora" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
           <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
         </a>
-        <a href="#" class="social-link" aria-label="Telegram">
+        <a href="https://t.me/dr_dildora_xasanovna" target="_blank" rel="noopener" class="social-link" aria-label="Telegram">
           <svg viewBox="0 0 24 24"><path d="M21.198 2.433a2.242 2.242 0 0 0-1.022.215l-15.5 6.5a2.25 2.25 0 0 0 .137 4.216l3.677.944 2.062 5.953c.16.46.575.75 1.052.75.388 0 .746-.183.97-.488l2.168-2.908 4.141 3.117a2.25 2.25 0 0 0 3.47-1.423l2.5-14.5a2.25 2.25 0 0 0-2.655-2.376z"/></svg>
-        </a>
-        <a href="#" class="social-link" aria-label="YouTube">
-          <svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
         </a>
       </div>
     </div>
