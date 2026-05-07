@@ -32,6 +32,7 @@
   }
 }
 </script>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -395,6 +396,112 @@
   </div>
 </section>
 
+<!-- CERTIFICATES -->
+<section id="certificates" role="region" aria-labelledby="cert-heading">
+  <div class="cert-bg-deco" aria-hidden="true">
+    <div class="cert-deco-circle cert-deco-1"></div>
+    <div class="cert-deco-circle cert-deco-2"></div>
+  </div>
+  <div style="text-align:center;max-width:600px;margin:0 auto;position:relative;z-index:1;">
+    <div class="section-tag reveal">Sertifikatlar</div>
+    <h2 class="section-title reveal reveal-delay-1" id="cert-heading">Xalqaro <em>tan olinish</em></h2>
+    <p class="section-lead reveal reveal-delay-2" style="margin:0 auto 60px;">
+      Xalqaro va respublika darajasidagi malaka oshirish kurslari hamda sertifikatlar.
+    </p>
+  </div>
+
+  <div class="cert-grid" id="certGrid">
+    <div class="cert-card reveal" data-index="0">
+      <div class="cert-inner">
+        <div class="cert-ribbon"><span>2023</span></div>
+        <div class="cert-img-wrap">
+          <img src="img/cert1.jpg" alt="ESE Sertifikat" class="cert-img" loading="lazy">
+          <div class="cert-overlay">
+            <button class="cert-zoom-btn" aria-label="Kattalashtirish">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="cert-info">
+          <div class="cert-org">Evropa endokrinologiya jamiyati</div>
+          <h3 class="cert-name">ESE Fellowship Certificate</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="cert-card reveal reveal-delay-1" data-index="1">
+      <div class="cert-inner">
+        <div class="cert-ribbon"><span>2022</span></div>
+        <div class="cert-img-wrap">
+          <img src="img/cert2.jpg" alt="TTA Dotsent sertifikati" class="cert-img" loading="lazy">
+          <div class="cert-overlay">
+            <button class="cert-zoom-btn" aria-label="Kattalashtirish">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="cert-info">
+          <div class="cert-org">Toshkent Tibbiyot Akademiyasi</div>
+          <h3 class="cert-name">Dotsent unvoni diplomi</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="cert-card reveal reveal-delay-2" data-index="2">
+      <div class="cert-inner">
+        <div class="cert-ribbon"><span>2021</span></div>
+        <div class="cert-img-wrap">
+          <img src="img/cert3.jpg" alt="RIIATM sertifikat" class="cert-img" loading="lazy">
+          <div class="cert-overlay">
+            <button class="cert-zoom-btn" aria-label="Kattalashtirish">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="cert-info">
+          <div class="cert-org">RIIATM — Moskva</div>
+          <h3 class="cert-name">Malaka oshirish sertifikati</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="cert-card reveal reveal-delay-1" data-index="3">
+      <div class="cert-inner">
+        <div class="cert-ribbon"><span>2020</span></div>
+        <div class="cert-img-wrap">
+          <img src="img/cert4.jpg" alt="Xalqaro konferensiya" class="cert-img" loading="lazy">
+          <div class="cert-overlay">
+            <button class="cert-zoom-btn" aria-label="Kattalashtirish">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="cert-info">
+          <div class="cert-org">IDF — Xalqaro diabet federatsiyasi</div>
+          <h3 class="cert-name">Konferensiya ishtirokchisi</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATE LIGHTBOX -->
+<div class="cert-lightbox" id="certLightbox" role="dialog" aria-modal="true" aria-label="Sertifikat ko'rish">
+  <button class="cert-lb-close" id="certLbClose" aria-label="Yopish">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+  </button>
+  <button class="cert-lb-prev" id="certLbPrev" aria-label="Oldingi">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+  </button>
+  <div class="cert-lb-img-wrap">
+    <img src="" alt="" class="cert-lb-img" id="certLbImg">
+  </div>
+  <button class="cert-lb-next" id="certLbNext" aria-label="Keyingi">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+  </button>
+  <div class="cert-lb-info" id="certLbInfo"></div>
+</div>
+
 <!-- TESTIMONIALS -->
 <section id="testimonials" role="region" aria-labelledby="test-heading">
   <div class="section-tag reveal">Bemorlar fikri</div>
@@ -455,11 +562,20 @@
       </div>
       <div class="contact-info-item reveal reveal-delay-1">
         <div class="contact-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
         </div>
         <div>
-          <div class="contact-info-label">Email</div>
-          <div class="contact-info-value"><a href="mailto:dildora.xasanovna@gmail.com">dildora.xasanovna@gmail.com</a></div>
+          <div class="contact-info-label">Instagram</div>
+          <div class="contact-info-value"><a href="https://instagram.com/dr.endokrinolog.dildora" target="_blank" rel="noopener">@dr.endokrinolog.dildora</a></div>
+        </div>
+      </div>
+      <div class="contact-info-item reveal reveal-delay-3">
+        <div class="contact-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M21.198 2.433a2.242 2.242 0 0 0-1.022.215l-15.5 6.5a2.25 2.25 0 0 0 .137 4.216l3.677.944 2.062 5.953c.16.46.575.75 1.052.75.388 0 .746-.183.97-.488l2.168-2.908 4.141 3.117a2.25 2.25 0 0 0 3.47-1.423l2.5-14.5a2.25 2.25 0 0 0-2.655-2.376z"/></svg>
+        </div>
+        <div>
+          <div class="contact-info-label">Telegram</div>
+          <div class="contact-info-value"><a href="https://t.me/dr_dildora_xasanovna" target="_blank" rel="noopener">@dr_dildora_xasanovna</a></div>
         </div>
       </div>
       <div class="contact-info-item reveal reveal-delay-2">
@@ -469,15 +585,6 @@
         <div>
           <div class="contact-info-label">Manzil</div>
           <div class="contact-info-value">Toshkent, Chilonzor tumani<br>"Complex Med klinikasi" </div>
-        </div>
-      </div>
-      <div class="contact-info-item reveal reveal-delay-3">
-        <div class="contact-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-        </div>
-        <div>
-          <div class="contact-info-label">Ish vaqti</div>
-          <div class="contact-info-value">Du–Sha: 09:00 – 18:00</div>
         </div>
       </div>
     </div>
@@ -568,14 +675,14 @@
       <h4>Bog'lanish</h4>
       <ul>
         <li><a href="tel:+998901234567">+998 90 949 60 30</a></li>
-        <li><a href="mailto:dildora.xasanovna@gmail.com">dildora.xasanovna@gmail.com</a></li>
+        <!-- <li><a href="mailto:dildora.xasanovna@gmail.com">dildora.xasanovna@gmail.com</a></li> -->
         <li><a href="#">Toshkent, Chilonzor</a></li>
         <li><a href="#">Du–Sha: 09:00–18:00</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
-    <p>© 2025 Dr. Dildora Xasanovna. Barcha huquqlar himoyalangan.</p>
+    <p>© 2026 Dr. Dildora Xasanovna. Barcha huquqlar himoyalangan.</p>
     <p>Toshkent, O'zbekiston</p>
   </div>
 </footer>

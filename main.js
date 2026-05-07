@@ -530,3 +530,65 @@ applyTheme(localStorage.getItem('theme') || 'light');
       if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
     });
   });
+
+  // ─── CERTIFICATES LIGHTBOX ───
+  (function() {
+    const cards = document.querySelectorAll('.cert-card');
+    const lightbox = document.getElementById('certLightbox');
+    const lbImg = document.getElementById('certLbImg');
+    const lbInfo = document.getElementById('certLbInfo');
+    const lbClose = document.getElementById('certLbClose');
+    const lbPrev = document.getElementById('certLbPrev');
+    const lbNext = document.getElementById('certLbNext');
+    if (!lightbox) return;
+
+    let current = 0;
+    const data = [];
+
+    cards.forEach((card, i) => {
+      const img = card.querySelector('.cert-img');
+      const name = card.querySelector('.cert-name');
+      const org = card.querySelector('.cert-org');
+      data.push({
+        src: img ? img.src : '',
+        alt: img ? img.alt : '',
+        name: name ? name.textContent : '',
+        org: org ? org.textContent : ''
+      });
+
+      card.addEventListener('click', () => open(i));
+    });
+
+    function open(idx) {
+      current = idx;
+      show();
+      lightbox.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function close() {
+      lightbox.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    function show() {
+      const d = data[current];
+      lbImg.style.opacity = '0';
+      lbImg.src = d.src;
+      lbImg.alt = d.alt;
+      lbImg.onload = () => { lbImg.style.opacity = '1'; };
+      lbInfo.textContent = d.org + ' — ' + d.name;
+    }
+
+    lbClose.addEventListener('click', close);
+    lbPrev.addEventListener('click', () => { current = (current - 1 + data.length) % data.length; show(); });
+    lbNext.addEventListener('click', () => { current = (current + 1) % data.length; show(); });
+
+    lightbox.addEventListener('click', e => { if (e.target === lightbox) close(); });
+    document.addEventListener('keydown', e => {
+      if (!lightbox.classList.contains('open')) return;
+      if (e.key === 'Escape') close();
+      if (e.key === 'ArrowLeft') { current = (current - 1 + data.length) % data.length; show(); }
+      if (e.key === 'ArrowRight') { current = (current + 1) % data.length; show(); }
+    });
+  })();
