@@ -1,1372 +1,692 @@
 <!DOCTYPE html>
 <html lang="uz">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Dr. Dildora Xasanovna — Endokrinolog | Toshkent</title>
-        <meta
-            name="description"
-            content="Toshkentdagi tajribali endokrinolog Dr. Dildora Xasanovna. Diabet, qalqonsimon bez, gormonal buzilishlar bo'yicha mutaxassis. Qabulga yozilish: +998 90 949 60 30"
-        />
-        <meta
-            name="keywords"
-            content="endokrinolog toshkent, diabet shifokori, qalqonsimon bez, gormonal shifo, Dildora Xasanovna"
-        />
-        <meta name="robots" content="index, follow" />
-        <meta
-            property="og:title"
-            content="Dr. Dildora Xasanovna — Endokrinolog | Toshkent"
-        />
-        <meta
-            property="og:description"
-            content="Tajribali endokrinolog. Diabet, qalqonsimon bez, gormonal buzilishlar bo'yicha mutaxassis."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://dildoraxasanovna.uz" />
-        <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@type": "Physician",
-                "name": "Dildora Xasanovna",
-                "medicalSpecialty": "Endocrinology",
-                "description": "Endokrinolog, 10+ yillik tajriba",
-                "address": {
-                    "@type": "PostalAddress",
-                    "addressLocality": "Toshkent",
-                    "addressRegion": "Chilonzor tumani",
-                    "addressCountry": "UZ"
-                },
-                "telephone": "+998901234567",
-                "url": "https://dildoraxasanovna.uz",
-                "worksFor": {
-                    "@type": "MedicalOrganization",
-                    "name": "Salomatlik Tibbiyot Markazi"
-                }
-            }
-        </script>
-        <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <div class="cursor" id="cursor"></div>
-        <div class="cursor-ring" id="cursorRing"></div>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Dildora Xasanovna — Endokrinolog | Toshkent</title>
+<meta name="description" content="Toshkentdagi tajribali endokrinolog Dr. Dildora Xasanovna. Diabet, qalqonsimon bez, gormonal buzilishlar bo'yicha mutaxassis. Qabulga yozilish: +998 90 949 60 30">
+<meta name="keywords" content="endokrinolog toshkent, diabet shifokori, qalqonsimon bez, gormonal shifo, Dildora Xasanovna">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Dr. Dildora Xasanovna — Endokrinolog | Toshkent">
+<meta property="og:description" content="Tajribali endokrinolog. Diabet, qalqonsimon bez, gormonal buzilishlar bo'yicha mutaxassis.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dildoraxasanovna.uz">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Physician",
+  "name": "Dildora Xasanovna",
+  "medicalSpecialty": "Endocrinology",
+  "description": "Endokrinolog, 10+ yillik tajriba",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Toshkent",
+    "addressRegion": "Chilonzor tumani",
+    "addressCountry": "UZ"
+  },
+  "telephone": "+998901234567",
+  "url": "https://dildoraxasanovna.uz",
+  "worksFor": {
+    "@type": "MedicalOrganization",
+    "name": "Salomatlik Tibbiyot Markazi"
+  }
+}
+</script>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        <!-- NAVBAR -->
-        <nav id="navbar" role="navigation" aria-label="Asosiy navigatsiya">
-            <a class="nav-logo" href="#hero" aria-label="Dr. Dildora Xasanovna">
-                <div class="nav-logo-icon">
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <path
-                            d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2zm0 2v16M4 12h16"
-                            stroke="white"
-                            fill="none"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                        />
-                    </svg>
-                </div>
-                <span class="nav-logo-text"
-                    >Dr. Dildora <span>Xasanovna</span></span
-                >
-            </a>
-            <ul class="nav-links" id="navLinks" role="list">
-                <li><a href="#about" data-i18n="nav.about">Haqida</a></li>
-                <li>
-                    <a href="#specializations" data-i18n="nav.spec"
-                        >Mutaxassislik</a
-                    >
-                </li>
-                <li><a href="#experience" data-i18n="nav.exp">Tajriba</a></li>
-                <li>
-                    <a href="#services" data-i18n="nav.services">Xizmatlar</a>
-                </li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li>
-                    <a href="#contact" class="nav-cta" data-i18n="nav.cta"
-                        >Qabulga yozilish</a
-                    >
-                </li>
-            </ul>
-            <div class="nav-controls">
-                <div
-                    class="lang-switcher"
-                    role="group"
-                    aria-label="Til tanlash"
-                >
-                    <button class="lang-btn active" data-lang="uz">UZ</button>
-                    <button class="lang-btn" data-lang="ru">RU</button>
-                    <button class="lang-btn" data-lang="en">EN</button>
-                </div>
-                <button
-                    class="theme-toggle"
-                    id="themeToggle"
-                    aria-label="Temani o'zgartirish"
-                >
-                    <svg
-                        id="themeIcon"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                    >
-                        <circle cx="12" cy="12" r="5" />
-                        <path
-                            d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
-                        />
-                    </svg>
-                </button>
-            </div>
-            <button
-                class="hamburger"
-                id="hamburger"
-                aria-label="Menyuni ochish"
-                aria-expanded="false"
-            >
-                <div class="bar"><span></span><span></span><span></span></div>
-            </button>
-        </nav>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
 
-        <!-- MOBILE MENU OVERLAY -->
-        <div id="menuOverlay" class="menu-overlay">
-            <div class="mobile-controls">
-                <div class="mobile-lang-switcher">
-                    <button class="lang-btn active" data-lang="uz">UZ</button>
-                    <button class="lang-btn" data-lang="ru">RU</button>
-                    <button class="lang-btn" data-lang="en">EN</button>
-                </div>
-                <button
-                    class="theme-toggle mobile-theme-toggle"
-                    id="themeToggleMobile"
-                    aria-label="Temani o'zgartirish"
-                >
-                    <svg
-                        id="themeIconMobile"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                    >
-                        <circle cx="12" cy="12" r="5" />
-                        <path
-                            d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
-                        />
-                    </svg>
-                </button>
-            </div>
+<!-- NAVBAR -->
+<nav id="navbar" role="navigation" aria-label="Asosiy navigatsiya">
+  <a class="nav-logo" href="#hero" aria-label="Dr. Dildora Xasanovna">
+    <div class="nav-logo-icon">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2zm0 2v16M4 12h16" stroke="white" fill="none" stroke-width="2" stroke-linecap="round"/></svg>
+    </div>
+    <span class="nav-logo-text">Dr. Dildora <span>Xasanovna</span></span>
+  </a>
+  <ul class="nav-links" id="navLinks" role="list">
+    <li><a href="#about" data-i18n="nav.about">Haqida</a></li>
+    <li><a href="#specializations" data-i18n="nav.spec">Mutaxassislik</a></li>
+    <li><a href="#experience" data-i18n="nav.exp">Tajriba</a></li>
+    <li><a href="#services" data-i18n="nav.services">Xizmatlar</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#contact" class="nav-cta" data-i18n="nav.cta">Qabulga yozilish</a></li>
+  </ul>
+  <div class="nav-controls">
+    <div class="lang-switcher" role="group" aria-label="Til tanlash">
+      <button class="lang-btn active" data-lang="uz">UZ</button>
+      <button class="lang-btn" data-lang="ru">RU</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+    <button class="theme-toggle" id="themeToggle" aria-label="Temani o'zgartirish">
+      <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+      </svg>
+    </button>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Menyuni ochish" aria-expanded="false">
+    <div class="bar"><span></span><span></span><span></span></div>
+  </button>
+</nav>
+
+<!-- MOBILE MENU OVERLAY -->
+<div id="menuOverlay" class="menu-overlay">
+  <div class="mobile-controls">
+    <div class="mobile-lang-switcher">
+      <button class="lang-btn active" data-lang="uz">UZ</button>
+      <button class="lang-btn" data-lang="ru">RU</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+    <button class="theme-toggle mobile-theme-toggle" id="themeToggleMobile" aria-label="Temani o'zgartirish">
+      <svg id="themeIconMobile" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+      </svg>
+    </button>
+  </div>
+</div>
+
+<!-- HERO -->
+<section id="hero" role="banner">
+  <!-- Background layers -->
+  <div class="hero-bg" aria-hidden="true">
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="hero-glow hero-glow-3"></div>
+    <div class="hero-dots"></div>
+  </div>
+
+  <!-- Left: content -->
+  <div class="hero-content">
+    <div class="hero-badge" role="text" data-i18n="hero.badge">Endokrinolog · Toshkent</div>
+    <h1 class="hero-title" data-i18n-html="hero.title">Sog'ligingiz —<br><em>mening ustunligim</em></h1>
+    <p class="hero-subtitle" data-i18n="hero.subtitle">Dr. Dildora Xasanovna — 10 yillik tajribaga ega endokrinolog. Diabet, qalqonsimon bez va gormonal buzilishlar bo'yicha mutaxassis.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-primary" data-i18n="nav.cta">Qabulga yozilish</a>
+      <a href="#about" class="btn-outline" data-i18n="hero.more">Batafsil</a>
+    </div>
+    <div class="hero-trust">
+      <span class="hero-trust-label">Sertifikatlangan:</span>
+      <span class="hero-trust-item">ESE</span>
+      <span class="hero-trust-sep">·</span>
+      <span class="hero-trust-item">TTA Dotsent</span>
+      <span class="hero-trust-sep">·</span>
+      <span class="hero-trust-item">RIIATM</span>
+    </div>
+  </div>
+
+  <!-- Right: photo + floating cards -->
+  <div class="hero-visual" aria-hidden="true">
+    <div class="hero-photo-ring"></div>
+    <div class="hero-photo-frame">
+      <img src="img/_USH2810.jpg" alt="Dr. Dildora Xasanovna" class="hero-photo-img">
+      <div class="hero-photo-overlay"></div>
+    </div>
+
+    <!-- Floating stat cards -->
+    <div class="hfc hfc-exp">
+      <div class="hfc-icon">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <div>
+        <div class="hfc-num">10+</div>
+        <div class="hfc-label">Yil tajriba</div>
+      </div>
+    </div>
+
+    <div class="hfc hfc-patients">
+      <div class="hfc-dot-wrap">
+        <span class="hfc-live-dot"></span>
+      </div>
+      <div>
+        <div class="hfc-num">2000+</div>
+        <div class="hfc-label">Sog'aygan bemorlar</div>
+      </div>
+    </div>
+
+    <div class="hfc hfc-rating">
+      <div class="hfc-stars">★★★★★</div>
+      <div class="hfc-label">95% mamnuniyat</div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div id="stats" role="region" aria-label="Statistika">
+  <div class="stat-item reveal">
+    <span class="stat-num" data-target="10">0</span><span class="stat-plus">+</span>
+    <div class="stat-label" data-i18n="stats.years">Yillik tajriba</div>
+  </div>
+  <div class="stat-item reveal reveal-delay-1">
+    <span class="stat-num" data-target="2000">0</span><span class="stat-plus">+</span>
+    <div class="stat-label" data-i18n="stats.patients">Bemorlar</div>
+  </div>
+  <div class="stat-item reveal reveal-delay-2">
+    <span class="stat-num" data-target="95">0</span><span class="stat-plus">%</span>
+    <div class="stat-label" data-i18n="stats.satisfaction">Bemorlar mamnuniyati</div>
+  </div>
+  <div class="stat-item reveal reveal-delay-3">
+    <span class="stat-num" data-target="50">0</span><span class="stat-plus">+</span>
+    <div class="stat-label" data-i18n="stats.pubs">Ilmiy maqolalar</div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about" role="region" aria-labelledby="about-heading">
+  <div class="about-grid">
+    <div class="about-visual reveal">
+      <div class="about-deco" aria-hidden="true"></div>
+      <div class="about-photo-frame" role="img" aria-label="Dr. Dildora Xasanovna portreti">
+        <div class="about-carousel">
+          <div class="carousel-track">
+            <img src="img/_USH2810.jpg" alt="Dr. Dildora Xasanovna" class="carousel-img active">
+            <img src="img/_USH2999.jpg" alt="Dr. Dildora Xasanovna" class="carousel-img">
+          </div>
+          <button class="carousel-btn carousel-prev" aria-label="Oldingi rasm">&#8249;</button>
+          <button class="carousel-btn carousel-next" aria-label="Keyingi rasm">&#8250;</button>
+          <div class="carousel-dots">
+            <span class="carousel-dot active"></span>
+            <span class="carousel-dot"></span>
+          </div>
         </div>
+      </div>
+      <div class="about-badge-float" aria-hidden="true">
+        <span class="abf-num">10+</span>
+        <span class="abf-label">Yil tajriba</span>
+      </div>
+    </div>
+    <div class="about-content">
+      <div class="section-tag reveal" data-i18n="about.tag">Shifokor haqida</div>
+      <h2 class="section-title reveal reveal-delay-1" id="about-heading" data-i18n-html="about.title">Siz bilan — har bir <em>qadam</em></h2>
+      <blockquote class="reveal reveal-delay-2" data-i18n="about.quote">"Har bir bemor — bu alohida dunyo. Mening vazifam — shu dunyoni tushunib, to'g'ri yo'l ko'rsatish."</blockquote>
+      <p class="reveal reveal-delay-2" data-i18n="about.p1">Dr. Dildora Xasanovna — Toshkent tibbiyot akademiyasini tamomlagan va endokrinologiya bo'yicha 10 yildan ortiq klinik tajribaga ega mutaxassis. U diabet, qalqonsimon bez kasalliklari va gormonal buzilishlarni davolashda keng tajribaga ega.</p>
+      <p class="reveal reveal-delay-3" data-i18n="about.p2">Doimiy ravishda xalqaro konferensiyalarda ishtirok etib, zamonaviy davolash usullarini amaliyotga tatbiq etib keladi. 50 dan ortiq ilmiy maqolalari nashr etilgan.</p>
+      <div class="about-pills reveal reveal-delay-4">
+        <span class="pill">Toshkent tibbiyot akademiyasi</span>
+        <span class="pill">Evropa endokrinologiya sertifikati</span>
+        <span class="pill">Moskva endokrinologiya markazi</span>
+        <span class="pill">Dotsent, TTA</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <!-- HERO -->
-        <section id="hero" role="banner">
-            <!-- Background layers -->
-            <div class="hero-bg" aria-hidden="true">
-                <div class="hero-glow hero-glow-1"></div>
-                <div class="hero-glow hero-glow-2"></div>
-                <div class="hero-glow hero-glow-3"></div>
-                <div class="hero-dots"></div>
-            </div>
+<!-- SPECIALIZATIONS -->
+<section id="specializations" role="region" aria-labelledby="spec-heading">
+  <div style="text-align:center;max-width:600px;margin:0 auto;">
+    <div class="section-tag reveal" data-i18n="spec.tag">Mutaxassislik</div>
+    <h2 class="section-title reveal reveal-delay-1" id="spec-heading" data-i18n-html="spec.title">Davolash <em>sohalari</em></h2>
+    <p class="section-lead reveal reveal-delay-2" style="margin:0 auto;" data-i18n="spec.lead">Zamonaviy tibbiyot usullaridan foydalangan holda keng qamrovli endokrinologik yordam ko'rsataman.</p>
+  </div>
+  <div class="spec-grid" role="list">
+    <div class="spec-card reveal" role="listitem">
+      <div class="spec-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+      </div>
+      <h3>Diabet kasalligi</h3>
+      <p>1-tur va 2-tur diabet, gestatsion diabet tashxisi va zamonaviy davolash dasturlari.</p>
+    </div>
+    <div class="spec-card reveal reveal-delay-1" role="listitem">
+      <div class="spec-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M12 22C6.48 22 2 17.52 2 12S6.48 2 12 2s10 4.48 10 10-4.48 10-10 10z"/><path d="M8 12h8M12 8v8"/></svg>
+      </div>
+      <h3>Qalqonsimon bez</h3>
+      <p>Gipotireoz, gipertireoz, tiroidit va qalqonsimon bez o'smalari bilan ishlash.</p>
+    </div>
+    <div class="spec-card reveal reveal-delay-2" role="listitem">
+      <div class="spec-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      </div>
+      <h3>Gormonal buzilishlar</h3>
+      <p>Reproduktiv va metabolik gormonal disbalans, PCOS, menopauza bilan bog'liq holatlar.</p>
+    </div>
+    <div class="spec-card reveal reveal-delay-1" role="listitem">
+      <div class="spec-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+      </div>
+      <h3>Semizlik va metabolizm</h3>
+      <p>Metabolik sindrom, semizlik, insulin qarshiligi va kompleks dieta dasturlari.</p>
+    </div>
+    <div class="spec-card reveal reveal-delay-2" role="listitem">
+      <div class="spec-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      </div>
+      <h3>Buyrak usti bezlari</h3>
+      <p>Adrenal bezlar kasalliklari, Kušing sindromi, gipokortitsizm tashxisi va davolash.</p>
+    </div>
+    <div class="spec-card reveal reveal-delay-3" role="listitem">
+      <div class="spec-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+      </div>
+      <h3>Suyak kasalliklari</h3>
+      <p>Osteoporoz, D vitamini tanqisligi, kaltsiy metabolizmi buzilishlarini davolash.</p>
+    </div>
+  </div>
+</section>
 
-            <!-- Left: content -->
-            <div class="hero-content">
-                <div class="hero-badge" role="text" data-i18n="hero.badge">
-                    Endokrinolog · Toshkent
-                </div>
-                <h1 class="hero-title" data-i18n-html="hero.title">
-                    Sog'ligingiz —<br /><em>mening ustunligim</em>
-                </h1>
-                <p class="hero-subtitle" data-i18n="hero.subtitle">
-                    Dr. Dildora Xasanovna — 10 yillik tajribaga ega
-                    endokrinolog. Diabet, qalqonsimon bez va gormonal
-                    buzilishlar bo'yicha mutaxassis.
-                </p>
-                <div class="hero-btns">
-                    <a href="#contact" class="btn-primary" data-i18n="nav.cta"
-                        >Qabulga yozilish</a
-                    >
-                    <a href="#about" class="btn-outline" data-i18n="hero.more"
-                        >Batafsil</a
-                    >
-                </div>
-                <div class="hero-trust">
-                    <span class="hero-trust-label">Sertifikatlangan:</span>
-                    <span class="hero-trust-item">ESE</span>
-                    <span class="hero-trust-sep">·</span>
-                    <span class="hero-trust-item">TTA Dotsent</span>
-                    <span class="hero-trust-sep">·</span>
-                    <span class="hero-trust-item">RIIATM</span>
-                </div>
-            </div>
+<!-- EXPERIENCE -->
+<section id="experience" role="region" aria-labelledby="exp-heading">
+  <div style="text-align:center;max-width:600px;margin:0 auto;">
+    <div class="section-tag reveal" data-i18n="exp.tag">Ta'lim va tajriba</div>
+    <h2 class="section-title reveal reveal-delay-1" id="exp-heading" data-i18n-html="exp.title">Mening <em>yo'lim</em></h2>
+  </div>
+  <div class="timeline" role="list">
+    <div class="tl-item reveal" role="listitem">
+      <div class="tl-content">
+        <h3>Katta endokrinolog</h3>
+        <div class="tl-inst">Respublika ixtisoslashtirilgan ilmiy-amaliy tibbiyot markazi</div>
+        <p>Klinik amaliyot, ilmiy tadqiqotlar va rezidentura dasturini boshqarish.</p>
+      </div>
+      <div class="tl-year">2018 – H.V.</div>
+      <div class="tl-dot" aria-hidden="true"></div>
+    </div>
+    <div class="tl-item reveal reveal-delay-1" role="listitem">
+      <div class="tl-year">2019 – H.V.</div>
+      <div class="tl-content">
+        <h3>Dotsent</h3>
+        <div class="tl-inst">Toshkent tibbiyot akademiyasi</div>
+        <p>Endokrinologiya fanidan ma'ruzalar, talabalar va ordinatorlarni o'qitish.</p>
+      </div>
+      <div class="tl-dot" aria-hidden="true"></div>
+    </div>
+    <div class="tl-item reveal reveal-delay-2" role="listitem">
+      <div class="tl-content">
+        <h3>Xalqaro sertifikat</h3>
+        <div class="tl-inst">Evropa endokrinologiya jamiyati (ESE)</div>
+        <p>Zamonaviy endokrinologiya bo'yicha xalqaro malaka oshirish kursi.</p>
+      </div>
+      <div class="tl-year">2017</div>
+      <div class="tl-dot" aria-hidden="true"></div>
+    </div>
+    <div class="tl-item reveal reveal-delay-1" role="listitem">
+      <div class="tl-year">2014 – 2018</div>
+      <div class="tl-content">
+        <h3>Endokrinolog</h3>
+        <div class="tl-inst">1-son Shahar klinik kasalxonasi, Toshkent</div>
+        <p>Klinik amaliyot va bemorlarni kuzatish, davolash protokollarini ishlab chiqish.</p>
+      </div>
+      <div class="tl-dot" aria-hidden="true"></div>
+    </div>
+    <div class="tl-item reveal reveal-delay-2" role="listitem">
+      <div class="tl-content">
+        <h3>MD, Umumiy tibbiyot</h3>
+        <div class="tl-inst">Toshkent tibbiyot akademiyasi</div>
+        <p>Oltin medal bilan tamomlagan. Endokrinologiya bo'yicha ordinatura.</p>
+      </div>
+      <div class="tl-year">2008 – 2014</div>
+      <div class="tl-dot" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
 
-            <!-- Right: photo + floating cards -->
-            <div class="hero-visual" aria-hidden="true">
-                <div class="hero-photo-ring"></div>
-                <div class="hero-photo-frame">
-                    <img
-                        src="img/_USH2810.jpg"
-                        alt="Dr. Dildora Xasanovna"
-                        class="hero-photo-img"
-                    />
-                    <div class="hero-photo-overlay"></div>
-                </div>
+<!-- SERVICES -->
+<section id="services" role="region" aria-labelledby="svc-heading">
+  <div style="text-align:center;max-width:600px;margin:0 auto;">
+    <div class="section-tag reveal" data-i18n="nav.services">Xizmatlar</div>
+    <h2 class="section-title reveal reveal-delay-1" id="svc-heading" data-i18n-html="svc.title">Nima <em>taklif etaman</em></h2>
+    <p class="section-lead reveal reveal-delay-2" style="margin:0 auto 0" data-i18n="svc.lead">Har bir bemor individual yondashuv va to'liq tibbiy xizmat oladi.</p>
+  </div>
+  <div class="services-grid" role="list">
+    <div class="service-card reveal" role="listitem">
+      <div class="service-duration">60 daqiqa</div>
+      <h3>Dastlabki qabul</h3>
+      <p>To'liq anamnez, tekshirish, tashxis va davolash rejasini tuzish.</p>
+      <div class="service-price">So'rov asosida</div>
+    </div>
+    <div class="service-card reveal reveal-delay-1" role="listitem">
+      <div class="service-duration">30 daqiqa</div>
+      <h3>Takroriy qabul</h3>
+      <p>Davolash natijalarini baholash, dori miqdorini moslashtirish.</p>
+      <div class="service-price">So'rov asosida</div>
+    </div>
+    <div class="service-card reveal reveal-delay-2" role="listitem">
+      <div class="service-duration">45 daqiqa</div>
+      <h3>Gormonal tahlil izohi</h3>
+      <p>Qon tahlillari natijalarini batafsil izohlash va tavsiyalar berish.</p>
+      <div class="service-price">So'rov asosida</div>
+    </div>
+    <div class="service-card reveal reveal-delay-1" role="listitem">
+      <div class="service-duration">Kurs</div>
+      <h3>Diabet boshqaruvi</h3>
+      <p>Uzoq muddatli diabet nazorati: ratsion, dori, hayot tarzi.</p>
+      <div class="service-price">So'rov asosida</div>
+    </div>
+    <div class="service-card reveal reveal-delay-2" role="listitem">
+      <div class="service-duration">30 daqiqa</div>
+      <h3>UZI natijasi izohi</h3>
+      <p>Qalqonsimon bez ultratovush tekshiruvi natijasini izohlash.</p>
+      <div class="service-price">So'rov asosida</div>
+    </div>
+    <div class="service-card reveal reveal-delay-3" role="listitem">
+      <div class="service-duration">Kurs</div>
+      <h3>Oziq-ovqat dasturi</h3>
+      <p>Individual dieta va hayot tarzi bo'yicha kompleks maslahat.</p>
+      <div class="service-price">So'rov asosida</div>
+    </div>
+  </div>
+</section>
 
-                <!-- Floating stat cards -->
-                <div class="hfc hfc-exp">
-                    <div class="hfc-icon">
-                        <svg
-                            viewBox="0 0 24 24"
-                            width="20"
-                            height="20"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                        >
-                            <path
-                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                            />
-                        </svg>
-                    </div>
-                    <div>
-                        <div class="hfc-num">10+</div>
-                        <div class="hfc-label">Yil tajriba</div>
-                    </div>
-                </div>
+<!-- PORTFOLIO -->
+<section id="portfolio" role="region" aria-labelledby="portfolio-heading">
+  <div style="text-align:center;max-width:600px;margin:0 auto;">
+    <div class="section-tag reveal">Portfolio</div>
+    <h2 class="section-title reveal reveal-delay-1" id="portfolio-heading">Ilmiy <em>ishlarim</em></h2>
+    <p class="section-lead reveal reveal-delay-2" style="margin:0 auto 60px;">
+      Nashr etilgan maqolalar, konferensiya ma'ruzalari va tibbiy tadqiqotlar.
+    </p>
+  </div>
 
-                <div class="hfc hfc-patients">
-                    <div class="hfc-dot-wrap">
-                        <span class="hfc-live-dot"></span>
-                    </div>
-                    <div>
-                        <div class="hfc-num">2000+</div>
-                        <div class="hfc-label">Sog'aygan bemorlar</div>
-                    </div>
-                </div>
+  <div class="portfolio-filters reveal" role="tablist" aria-label="Portfolio filtrlari">
+    <button class="pf-btn active" data-filter="all" role="tab" aria-selected="true" data-i18n="pf.all">Barchasi</button>
+    <button class="pf-btn" data-filter="article" role="tab" aria-selected="false" data-i18n="pf.article">Maqolalar</button>
+    <button class="pf-btn" data-filter="conference" role="tab" aria-selected="false" data-i18n="pf.conference">Konferensiyalar</button>
+    <button class="pf-btn" data-filter="award" role="tab" aria-selected="false" data-i18n="pf.award">Mukofotlar</button>
+  </div>
 
-                <div class="hfc hfc-rating">
-                    <div class="hfc-stars">★★★★★</div>
-                    <div class="hfc-label">95% mamnuniyat</div>
-                </div>
-            </div>
-        </section>
+  <div class="portfolio-grid" id="portfolioGrid" role="list"></div>
 
-        <!-- STATS -->
-        <div id="stats" role="region" aria-label="Statistika">
-            <div class="stat-item reveal">
-                <span class="stat-num" data-target="10">0</span
-                ><span class="stat-plus">+</span>
-                <div class="stat-label" data-i18n="stats.years">
-                    Yillik tajriba
-                </div>
-            </div>
-            <div class="stat-item reveal reveal-delay-1">
-                <span class="stat-num" data-target="2000">0</span
-                ><span class="stat-plus">+</span>
-                <div class="stat-label" data-i18n="stats.patients">
-                    Bemorlar
-                </div>
-            </div>
-            <div class="stat-item reveal reveal-delay-2">
-                <span class="stat-num" data-target="95">0</span
-                ><span class="stat-plus">%</span>
-                <div class="stat-label" data-i18n="stats.satisfaction">
-                    Bemorlar mamnuniyati
-                </div>
-            </div>
-            <div class="stat-item reveal reveal-delay-3">
-                <span class="stat-num" data-target="50">0</span
-                ><span class="stat-plus">+</span>
-                <div class="stat-label" data-i18n="stats.pubs">
-                    Ilmiy maqolalar
-                </div>
-            </div>
+  <div style="text-align:center;margin-top:50px;" class="reveal">
+    <a href="#contact" class="btn-more-works" data-i18n="pf.cta">Hamkorlik uchun bog'laning →</a>
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates" role="region" aria-labelledby="cert-heading">
+  <div class="cert-bg-deco" aria-hidden="true">
+    <div class="cert-deco-circle cert-deco-1"></div>
+    <div class="cert-deco-circle cert-deco-2"></div>
+  </div>
+  <div style="text-align:center;max-width:600px;margin:0 auto;position:relative;z-index:1;">
+    <div class="section-tag reveal">Sertifikatlar</div>
+    <h2 class="section-title reveal reveal-delay-1" id="cert-heading">Xalqaro <em>tan olinish</em></h2>
+    <p class="section-lead reveal reveal-delay-2" style="margin:0 auto 60px;">
+      Xalqaro va respublika darajasidagi malaka oshirish kurslari hamda sertifikatlar.
+    </p>
+  </div>
+
+  <div class="cert-grid" id="certGrid">
+    <div class="cert-card reveal" data-index="0">
+      <div class="cert-inner">
+        <div class="cert-ribbon"><span>2023</span></div>
+        <div class="cert-img-wrap">
+          <img src="img/cert1.jpg" alt="ESE Sertifikat" class="cert-img" loading="lazy">
+          <div class="cert-overlay">
+            <button class="cert-zoom-btn" aria-label="Kattalashtirish">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+            </button>
+          </div>
         </div>
-
-        <!-- ABOUT -->
-        <section id="about" role="region" aria-labelledby="about-heading">
-            <div class="about-grid">
-                <div class="about-visual reveal">
-                    <div class="about-deco" aria-hidden="true"></div>
-                    <div
-                        class="about-photo-frame"
-                        role="img"
-                        aria-label="Dr. Dildora Xasanovna portreti"
-                    >
-                        <div class="about-carousel">
-                            <div class="carousel-track">
-                                <img
-                                    src="img/_USH2810.jpg"
-                                    alt="Dr. Dildora Xasanovna"
-                                    class="carousel-img active"
-                                />
-                                <img
-                                    src="img/_USH2999.jpg"
-                                    alt="Dr. Dildora Xasanovna"
-                                    class="carousel-img"
-                                />
-                            </div>
-                            <button
-                                class="carousel-btn carousel-prev"
-                                aria-label="Oldingi rasm"
-                            >
-                                &#8249;
-                            </button>
-                            <button
-                                class="carousel-btn carousel-next"
-                                aria-label="Keyingi rasm"
-                            >
-                                &#8250;
-                            </button>
-                            <div class="carousel-dots">
-                                <span class="carousel-dot active"></span>
-                                <span class="carousel-dot"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-badge-float" aria-hidden="true">
-                        <span class="abf-num">10+</span>
-                        <span class="abf-label">Yil tajriba</span>
-                    </div>
-                </div>
-                <div class="about-content">
-                    <div class="section-tag reveal" data-i18n="about.tag">
-                        Shifokor haqida
-                    </div>
-                    <h2
-                        class="section-title reveal reveal-delay-1"
-                        id="about-heading"
-                        data-i18n-html="about.title"
-                    >
-                        Siz bilan — har bir <em>qadam</em>
-                    </h2>
-                    <blockquote
-                        class="reveal reveal-delay-2"
-                        data-i18n="about.quote"
-                    >
-                        "Har bir bemor — bu alohida dunyo. Mening vazifam — shu
-                        dunyoni tushunib, to'g'ri yo'l ko'rsatish."
-                    </blockquote>
-                    <p class="reveal reveal-delay-2" data-i18n="about.p1">
-                        Dr. Dildora Xasanovna — Toshkent tibbiyot akademiyasini
-                        tamomlagan va endokrinologiya bo'yicha 10 yildan ortiq
-                        klinik tajribaga ega mutaxassis. U diabet, qalqonsimon
-                        bez kasalliklari va gormonal buzilishlarni davolashda
-                        keng tajribaga ega.
-                    </p>
-                    <p class="reveal reveal-delay-3" data-i18n="about.p2">
-                        Doimiy ravishda xalqaro konferensiyalarda ishtirok etib,
-                        zamonaviy davolash usullarini amaliyotga tatbiq etib
-                        keladi. 50 dan ortiq ilmiy maqolalari nashr etilgan.
-                    </p>
-                    <div class="about-pills reveal reveal-delay-4">
-                        <span class="pill">Toshkent tibbiyot akademiyasi</span>
-                        <span class="pill"
-                            >Evropa endokrinologiya sertifikati</span
-                        >
-                        <span class="pill">Moskva endokrinologiya markazi</span>
-                        <span class="pill">Dotsent, TTA</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SPECIALIZATIONS -->
-        <section
-            id="specializations"
-            role="region"
-            aria-labelledby="spec-heading"
-        >
-            <div style="text-align: center; max-width: 600px; margin: 0 auto">
-                <div class="section-tag reveal" data-i18n="spec.tag">
-                    Mutaxassislik
-                </div>
-                <h2
-                    class="section-title reveal reveal-delay-1"
-                    id="spec-heading"
-                    data-i18n-html="spec.title"
-                >
-                    Davolash <em>sohalari</em>
-                </h2>
-                <p
-                    class="section-lead reveal reveal-delay-2"
-                    style="margin: 0 auto"
-                    data-i18n="spec.lead"
-                >
-                    Zamonaviy tibbiyot usullaridan foydalangan holda keng
-                    qamrovli endokrinologik yordam ko'rsataman.
-                </p>
-            </div>
-            <div class="spec-grid" role="list">
-                <div class="spec-card reveal" role="listitem">
-                    <div class="spec-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24">
-                            <circle cx="12" cy="12" r="3" />
-                            <path
-                                d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"
-                            />
-                        </svg>
-                    </div>
-                    <h3>Diabet kasalligi</h3>
-                    <p>
-                        1-tur va 2-tur diabet, gestatsion diabet tashxisi va
-                        zamonaviy davolash dasturlari.
-                    </p>
-                </div>
-                <div class="spec-card reveal reveal-delay-1" role="listitem">
-                    <div class="spec-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24">
-                            <path
-                                d="M12 22C6.48 22 2 17.52 2 12S6.48 2 12 2s10 4.48 10 10-4.48 10-10 10z"
-                            />
-                            <path d="M8 12h8M12 8v8" />
-                        </svg>
-                    </div>
-                    <h3>Qalqonsimon bez</h3>
-                    <p>
-                        Gipotireoz, gipertireoz, tiroidit va qalqonsimon bez
-                        o'smalari bilan ishlash.
-                    </p>
-                </div>
-                <div class="spec-card reveal reveal-delay-2" role="listitem">
-                    <div class="spec-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24">
-                            <path
-                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
-                            />
-                        </svg>
-                    </div>
-                    <h3>Gormonal buzilishlar</h3>
-                    <p>
-                        Reproduktiv va metabolik gormonal disbalans, PCOS,
-                        menopauza bilan bog'liq holatlar.
-                    </p>
-                </div>
-                <div class="spec-card reveal reveal-delay-1" role="listitem">
-                    <div class="spec-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24">
-                            <rect x="2" y="3" width="20" height="14" rx="2" />
-                            <path d="M8 21h8M12 17v4" />
-                        </svg>
-                    </div>
-                    <h3>Semizlik va metabolizm</h3>
-                    <p>
-                        Metabolik sindrom, semizlik, insulin qarshiligi va
-                        kompleks dieta dasturlari.
-                    </p>
-                </div>
-                <div class="spec-card reveal reveal-delay-2" role="listitem">
-                    <div class="spec-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24">
-                            <path
-                                d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
-                            />
-                        </svg>
-                    </div>
-                    <h3>Buyrak usti bezlari</h3>
-                    <p>
-                        Adrenal bezlar kasalliklari, Kušing sindromi,
-                        gipokortitsizm tashxisi va davolash.
-                    </p>
-                </div>
-                <div class="spec-card reveal reveal-delay-3" role="listitem">
-                    <div class="spec-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M18 20V10M12 20V4M6 20v-6" />
-                        </svg>
-                    </div>
-                    <h3>Suyak kasalliklari</h3>
-                    <p>
-                        Osteoporoz, D vitamini tanqisligi, kaltsiy metabolizmi
-                        buzilishlarini davolash.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- EXPERIENCE -->
-        <section id="experience" role="region" aria-labelledby="exp-heading">
-            <div style="text-align: center; max-width: 600px; margin: 0 auto">
-                <div class="section-tag reveal" data-i18n="exp.tag">
-                    Ta'lim va tajriba
-                </div>
-                <h2
-                    class="section-title reveal reveal-delay-1"
-                    id="exp-heading"
-                    data-i18n-html="exp.title"
-                >
-                    Mening <em>yo'lim</em>
-                </h2>
-            </div>
-            <div class="timeline" role="list">
-                <div class="tl-item reveal" role="listitem">
-                    <div class="tl-content">
-                        <h3>Katta endokrinolog</h3>
-                        <div class="tl-inst">
-                            Respublika ixtisoslashtirilgan ilmiy-amaliy tibbiyot
-                            markazi
-                        </div>
-                        <p>
-                            Klinik amaliyot, ilmiy tadqiqotlar va rezidentura
-                            dasturini boshqarish.
-                        </p>
-                    </div>
-                    <div class="tl-year">2018 – H.V.</div>
-                    <div class="tl-dot" aria-hidden="true"></div>
-                </div>
-                <div class="tl-item reveal reveal-delay-1" role="listitem">
-                    <div class="tl-year">2019 – H.V.</div>
-                    <div class="tl-content">
-                        <h3>Dotsent</h3>
-                        <div class="tl-inst">Toshkent tibbiyot akademiyasi</div>
-                        <p>
-                            Endokrinologiya fanidan ma'ruzalar, talabalar va
-                            ordinatorlarni o'qitish.
-                        </p>
-                    </div>
-                    <div class="tl-dot" aria-hidden="true"></div>
-                </div>
-                <div class="tl-item reveal reveal-delay-2" role="listitem">
-                    <div class="tl-content">
-                        <h3>Xalqaro sertifikat</h3>
-                        <div class="tl-inst">
-                            Evropa endokrinologiya jamiyati (ESE)
-                        </div>
-                        <p>
-                            Zamonaviy endokrinologiya bo'yicha xalqaro malaka
-                            oshirish kursi.
-                        </p>
-                    </div>
-                    <div class="tl-year">2017</div>
-                    <div class="tl-dot" aria-hidden="true"></div>
-                </div>
-                <div class="tl-item reveal reveal-delay-1" role="listitem">
-                    <div class="tl-year">2014 – 2018</div>
-                    <div class="tl-content">
-                        <h3>Endokrinolog</h3>
-                        <div class="tl-inst">
-                            1-son Shahar klinik kasalxonasi, Toshkent
-                        </div>
-                        <p>
-                            Klinik amaliyot va bemorlarni kuzatish, davolash
-                            protokollarini ishlab chiqish.
-                        </p>
-                    </div>
-                    <div class="tl-dot" aria-hidden="true"></div>
-                </div>
-                <div class="tl-item reveal reveal-delay-2" role="listitem">
-                    <div class="tl-content">
-                        <h3>MD, Umumiy tibbiyot</h3>
-                        <div class="tl-inst">Toshkent tibbiyot akademiyasi</div>
-                        <p>
-                            Oltin medal bilan tamomlagan. Endokrinologiya
-                            bo'yicha ordinatura.
-                        </p>
-                    </div>
-                    <div class="tl-year">2008 – 2014</div>
-                    <div class="tl-dot" aria-hidden="true"></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SERVICES -->
-        <section id="services" role="region" aria-labelledby="svc-heading">
-            <div style="text-align: center; max-width: 600px; margin: 0 auto">
-                <div class="section-tag reveal" data-i18n="nav.services">
-                    Xizmatlar
-                </div>
-                <h2
-                    class="section-title reveal reveal-delay-1"
-                    id="svc-heading"
-                    data-i18n-html="svc.title"
-                >
-                    Nima <em>taklif etaman</em>
-                </h2>
-                <p
-                    class="section-lead reveal reveal-delay-2"
-                    style="margin: 0 auto 0"
-                    data-i18n="svc.lead"
-                >
-                    Har bir bemor individual yondashuv va to'liq tibbiy xizmat
-                    oladi.
-                </p>
-            </div>
-            <div class="services-grid" role="list">
-                <div class="service-card reveal" role="listitem">
-                    <div class="service-duration">60 daqiqa</div>
-                    <h3>Dastlabki qabul</h3>
-                    <p>
-                        To'liq anamnez, tekshirish, tashxis va davolash rejasini
-                        tuzish.
-                    </p>
-                    <div class="service-price">So'rov asosida</div>
-                </div>
-                <div class="service-card reveal reveal-delay-1" role="listitem">
-                    <div class="service-duration">30 daqiqa</div>
-                    <h3>Takroriy qabul</h3>
-                    <p>
-                        Davolash natijalarini baholash, dori miqdorini
-                        moslashtirish.
-                    </p>
-                    <div class="service-price">So'rov asosida</div>
-                </div>
-                <div class="service-card reveal reveal-delay-2" role="listitem">
-                    <div class="service-duration">45 daqiqa</div>
-                    <h3>Gormonal tahlil izohi</h3>
-                    <p>
-                        Qon tahlillari natijalarini batafsil izohlash va
-                        tavsiyalar berish.
-                    </p>
-                    <div class="service-price">So'rov asosida</div>
-                </div>
-                <div class="service-card reveal reveal-delay-1" role="listitem">
-                    <div class="service-duration">Kurs</div>
-                    <h3>Diabet boshqaruvi</h3>
-                    <p>
-                        Uzoq muddatli diabet nazorati: ratsion, dori, hayot
-                        tarzi.
-                    </p>
-                    <div class="service-price">So'rov asosida</div>
-                </div>
-                <div class="service-card reveal reveal-delay-2" role="listitem">
-                    <div class="service-duration">30 daqiqa</div>
-                    <h3>UZI natijasi izohi</h3>
-                    <p>
-                        Qalqonsimon bez ultratovush tekshiruvi natijasini
-                        izohlash.
-                    </p>
-                    <div class="service-price">So'rov asosida</div>
-                </div>
-                <div class="service-card reveal reveal-delay-3" role="listitem">
-                    <div class="service-duration">Kurs</div>
-                    <h3>Oziq-ovqat dasturi</h3>
-                    <p>
-                        Individual dieta va hayot tarzi bo'yicha kompleks
-                        maslahat.
-                    </p>
-                    <div class="service-price">So'rov asosida</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- PORTFOLIO -->
-        <section
-            id="portfolio"
-            role="region"
-            aria-labelledby="portfolio-heading"
-        >
-            <div style="text-align: center; max-width: 600px; margin: 0 auto">
-                <div class="section-tag reveal">Portfolio</div>
-                <h2
-                    class="section-title reveal reveal-delay-1"
-                    id="portfolio-heading"
-                >
-                    Ilmiy <em>ishlarim</em>
-                </h2>
-                <p
-                    class="section-lead reveal reveal-delay-2"
-                    style="margin: 0 auto 60px"
-                >
-                    Nashr etilgan maqolalar, konferensiya ma'ruzalari va tibbiy
-                    tadqiqotlar.
-                </p>
-            </div>
-
-            <div
-                class="portfolio-filters reveal"
-                role="tablist"
-                aria-label="Portfolio filtrlari"
-            >
-                <button
-                    class="pf-btn active"
-                    data-filter="all"
-                    role="tab"
-                    aria-selected="true"
-                    data-i18n="pf.all"
-                >
-                    Barchasi
-                </button>
-                <button
-                    class="pf-btn"
-                    data-filter="article"
-                    role="tab"
-                    aria-selected="false"
-                    data-i18n="pf.article"
-                >
-                    Maqolalar
-                </button>
-                <button
-                    class="pf-btn"
-                    data-filter="conference"
-                    role="tab"
-                    aria-selected="false"
-                    data-i18n="pf.conference"
-                >
-                    Konferensiyalar
-                </button>
-                <button
-                    class="pf-btn"
-                    data-filter="award"
-                    role="tab"
-                    aria-selected="false"
-                    data-i18n="pf.award"
-                >
-                    Mukofotlar
-                </button>
-            </div>
-
-            <div class="portfolio-grid" id="portfolioGrid" role="list"></div>
-
-            <div style="text-align: center; margin-top: 50px" class="reveal">
-                <a href="#contact" class="btn-more-works" data-i18n="pf.cta"
-                    >Hamkorlik uchun bog'laning →</a
-                >
-            </div>
-        </section>
-
-        <!-- CERTIFICATES -->
-        <section id="certificates" role="region" aria-labelledby="cert-heading">
-            <div class="cert-bg-deco" aria-hidden="true">
-                <div class="cert-deco-circle cert-deco-1"></div>
-                <div class="cert-deco-circle cert-deco-2"></div>
-            </div>
-            <div
-                style="
-                    text-align: center;
-                    max-width: 600px;
-                    margin: 0 auto;
-                    position: relative;
-                    z-index: 1;
-                "
-            >
-                <div class="section-tag reveal">Sertifikatlar</div>
-                <h2
-                    class="section-title reveal reveal-delay-1"
-                    id="cert-heading"
-                >
-                    Xalqaro <em>tan olinish</em>
-                </h2>
-                <p
-                    class="section-lead reveal reveal-delay-2"
-                    style="margin: 0 auto 60px"
-                >
-                    Xalqaro va respublika darajasidagi malaka oshirish kurslari
-                    hamda sertifikatlar.
-                </p>
-            </div>
-
-            <div class="cert-grid" id="certGrid">
-                <div class="cert-card reveal" data-index="0">
-                    <div class="cert-inner">
-                        <div class="cert-ribbon"><span>2023</span></div>
-                        <div class="cert-img-wrap">
-                            <img
-                                src="img/cert1.jpg"
-                                alt="ESE Sertifikat"
-                                class="cert-img"
-                                loading="lazy"
-                            />
-                            <div class="cert-overlay">
-                                <button
-                                    class="cert-zoom-btn"
-                                    aria-label="Kattalashtirish"
-                                >
-                                    <svg
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                    >
-                                        <circle cx="11" cy="11" r="8" />
-                                        <path
-                                            d="M21 21l-4.35-4.35M11 8v6M8 11h6"
-                                        />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="cert-info">
-                            <div class="cert-org">
-                                Evropa endokrinologiya jamiyati
-                            </div>
-                            <h3 class="cert-name">
-                                ESE Fellowship Certificate
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cert-card reveal reveal-delay-1" data-index="1">
-                    <div class="cert-inner">
-                        <div class="cert-ribbon"><span>2022</span></div>
-                        <div class="cert-img-wrap">
-                            <img
-                                src="img/cert2.jpg"
-                                alt="TTA Dotsent sertifikati"
-                                class="cert-img"
-                                loading="lazy"
-                            />
-                            <div class="cert-overlay">
-                                <button
-                                    class="cert-zoom-btn"
-                                    aria-label="Kattalashtirish"
-                                >
-                                    <svg
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                    >
-                                        <circle cx="11" cy="11" r="8" />
-                                        <path
-                                            d="M21 21l-4.35-4.35M11 8v6M8 11h6"
-                                        />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="cert-info">
-                            <div class="cert-org">
-                                Toshkent Tibbiyot Akademiyasi
-                            </div>
-                            <h3 class="cert-name">Dotsent unvoni diplomi</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cert-card reveal reveal-delay-2" data-index="2">
-                    <div class="cert-inner">
-                        <div class="cert-ribbon"><span>2021</span></div>
-                        <div class="cert-img-wrap">
-                            <img
-                                src="img/cert3.jpg"
-                                alt="RIIATM sertifikat"
-                                class="cert-img"
-                                loading="lazy"
-                            />
-                            <div class="cert-overlay">
-                                <button
-                                    class="cert-zoom-btn"
-                                    aria-label="Kattalashtirish"
-                                >
-                                    <svg
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                    >
-                                        <circle cx="11" cy="11" r="8" />
-                                        <path
-                                            d="M21 21l-4.35-4.35M11 8v6M8 11h6"
-                                        />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="cert-info">
-                            <div class="cert-org">RIIATM — Moskva</div>
-                            <h3 class="cert-name">
-                                Malaka oshirish sertifikati
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cert-card reveal reveal-delay-1" data-index="3">
-                    <div class="cert-inner">
-                        <div class="cert-ribbon"><span>2020</span></div>
-                        <div class="cert-img-wrap">
-                            <img
-                                src="img/cert4.jpg"
-                                alt="Xalqaro konferensiya"
-                                class="cert-img"
-                                loading="lazy"
-                            />
-                            <div class="cert-overlay">
-                                <button
-                                    class="cert-zoom-btn"
-                                    aria-label="Kattalashtirish"
-                                >
-                                    <svg
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                    >
-                                        <circle cx="11" cy="11" r="8" />
-                                        <path
-                                            d="M21 21l-4.35-4.35M11 8v6M8 11h6"
-                                        />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="cert-info">
-                            <div class="cert-org">
-                                IDF — Xalqaro diabet federatsiyasi
-                            </div>
-                            <h3 class="cert-name">
-                                Konferensiya ishtirokchisi
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CERTIFICATE LIGHTBOX -->
-        <div
-            class="cert-lightbox"
-            id="certLightbox"
-            role="dialog"
-            aria-modal="true"
-            aria-label="Sertifikat ko'rish"
-        >
-            <button class="cert-lb-close" id="certLbClose" aria-label="Yopish">
-                <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                >
-                    <path d="M18 6L6 18M6 6l12 12" />
-                </svg>
-            </button>
-            <button class="cert-lb-prev" id="certLbPrev" aria-label="Oldingi">
-                <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                >
-                    <path d="M15 18l-6-6 6-6" />
-                </svg>
-            </button>
-            <div class="cert-lb-img-wrap">
-                <img src="" alt="" class="cert-lb-img" id="certLbImg" />
-            </div>
-            <button class="cert-lb-next" id="certLbNext" aria-label="Keyingi">
-                <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                >
-                    <path d="M9 18l6-6-6-6" />
-                </svg>
-            </button>
-            <div class="cert-lb-info" id="certLbInfo"></div>
+        <div class="cert-info">
+          <div class="cert-org">Evropa endokrinologiya jamiyati</div>
+          <h3 class="cert-name">ESE Fellowship Certificate</h3>
         </div>
+      </div>
+    </div>
 
-        <!-- TESTIMONIALS -->
-        <section id="testimonials" role="region" aria-labelledby="test-heading">
-            <div class="section-tag reveal">Bemorlar fikri</div>
-            <h2 class="section-title reveal reveal-delay-1" id="test-heading">
-                Ular nima <em>deydi?</em>
-            </h2>
-            <div class="testimonials-track" role="list">
-                <div class="testimonial-card reveal" role="listitem">
-                    <div class="stars" aria-label="5 yulduz">★★★★★</div>
-                    <p class="testimonial-text">
-                        "Dr. Dildora menga diabet bilan kurashishni o'rgatdi.
-                        Faqat dori emas, hayot tarzimni to'liq o'zgartirdik. Bir
-                        yil ichida qandim normallashdi."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="t-avatar" aria-hidden="true">SM</div>
-                        <div>
-                            <div class="t-name">Sardor M.</div>
-                            <div class="t-detail">Diabet, 2-tur · 2023</div>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="testimonial-card reveal reveal-delay-1"
-                    role="listitem"
-                >
-                    <div class="stars" aria-label="5 yulduz">★★★★★</div>
-                    <p class="testimonial-text">
-                        "Qalqonsimon bez muammom bor edi, ko'p shifokorlar
-                        noto'g'ri tashxis qo'yishgan. Dildora xonim birinchi
-                        qabuldayoq to'g'ri tashxis qo'ydi."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="t-avatar" aria-hidden="true">NK</div>
-                        <div>
-                            <div class="t-name">Nodira K.</div>
-                            <div class="t-detail">Gipotireoz · 2024</div>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="testimonial-card reveal reveal-delay-2"
-                    role="listitem"
-                >
-                    <div class="stars" aria-label="5 yulduz">★★★★★</div>
-                    <p class="testimonial-text">
-                        "PCOS tashxisi bilan 3 yil qiynalganman. Bu shifokor
-                        nafaqat dori, balki to'liq hayot rejimi tuzib berdi.
-                        Endilikda ancha yaxshiman."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="t-avatar" aria-hidden="true">ZA</div>
-                        <div>
-                            <div class="t-name">Zulfiya A.</div>
-                            <div class="t-detail">PCOS · 2024</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <div class="cert-card reveal reveal-delay-1" data-index="1">
+      <div class="cert-inner">
+        <div class="cert-ribbon"><span>2022</span></div>
+        <div class="cert-img-wrap">
+          <img src="img/cert2.jpg" alt="TTA Dotsent sertifikati" class="cert-img" loading="lazy">
+          <div class="cert-overlay">
+            <button class="cert-zoom-btn" aria-label="Kattalashtirish">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="cert-info">
+          <div class="cert-org">Toshkent Tibbiyot Akademiyasi</div>
+          <h3 class="cert-name">Dotsent unvoni diplomi</h3>
+        </div>
+      </div>
+    </div>
 
-        <!-- CONTACT -->
-        <section id="contact" role="region" aria-labelledby="contact-heading">
-            <div class="contact-grid">
-                <div>
-                    <div class="section-tag reveal" data-i18n="contact.tag">
-                        Bog'lanish
-                    </div>
-                    <h2
-                        class="section-title reveal reveal-delay-1"
-                        id="contact-heading"
-                        data-i18n-html="contact.title"
-                    >
-                        Qabulga <em>yoziling</em>
-                    </h2>
-                    <p
-                        class="section-lead reveal reveal-delay-2"
-                        data-i18n="contact.lead"
-                    >
-                        Birinchi qadamni bosing — sog'lig'ingiz uchun to'g'ri
-                        qaror.
-                    </p>
+    <div class="cert-card reveal reveal-delay-2" data-index="2">
+      <div class="cert-inner">
+        <div class="cert-ribbon"><span>2021</span></div>
+        <div class="cert-img-wrap">
+          <img src="img/cert3.jpg" alt="RIIATM sertifikat" class="cert-img" loading="lazy">
+          <div class="cert-overlay">
+            <button class="cert-zoom-btn" aria-label="Kattalashtirish">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="cert-info">
+          <div class="cert-org">RIIATM — Moskva</div>
+          <h3 class="cert-name">Malaka oshirish sertifikati</h3>
+        </div>
+      </div>
+    </div>
 
-                    <div class="contact-info-item reveal">
-                        <div class="contact-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24">
-                                <path
-                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.12 6.12l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
-                                />
-                            </svg>
-                        </div>
-                        <div>
-                            <div class="contact-info-label">Telefon</div>
-                            <div class="contact-info-value">
-                                <a href="tel:+998901234567"
-                                    >+998 90 949 60 30</a
-                                >
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-info-item reveal reveal-delay-1">
-                        <div class="contact-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24">
-                                <rect
-                                    x="2"
-                                    y="2"
-                                    width="20"
-                                    height="20"
-                                    rx="5"
-                                    ry="5"
-                                />
-                                <path
-                                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
-                                />
-                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                            </svg>
-                        </div>
-                        <div>
-                            <div class="contact-info-label">Instagram</div>
-                            <div class="contact-info-value">
-                                <a
-                                    href="https://instagram.com/dr.endokrinolog.dildora"
-                                    target="_blank"
-                                    rel="noopener"
-                                    >@dr.endokrinolog.dildora</a
-                                >
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-info-item reveal reveal-delay-3">
-                        <div class="contact-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24">
-                                <path
-                                    d="M21.198 2.433a2.242 2.242 0 0 0-1.022.215l-15.5 6.5a2.25 2.25 0 0 0 .137 4.216l3.677.944 2.062 5.953c.16.46.575.75 1.052.75.388 0 .746-.183.97-.488l2.168-2.908 4.141 3.117a2.25 2.25 0 0 0 3.47-1.423l2.5-14.5a2.25 2.25 0 0 0-2.655-2.376z"
-                                />
-                            </svg>
-                        </div>
-                        <div>
-                            <div class="contact-info-label">Telegram</div>
-                            <div class="contact-info-value">
-                                <a
-                                    href="https://t.me/dr_dildora_xasanovna"
-                                    target="_blank"
-                                    rel="noopener"
-                                    >@dr_dildora_xasanovna</a
-                                >
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-info-item reveal reveal-delay-2">
-                        <div class="contact-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24">
-                                <path
-                                    d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
-                                />
-                                <circle cx="12" cy="10" r="3" />
-                            </svg>
-                        </div>
-                        <div>
-                            <div class="contact-info-label">Manzil</div>
-                            <div class="contact-info-value">
-                                Toshkent, Chilonzor tumani<br />"Complex Med
-                                klinikasi"
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="cert-card reveal reveal-delay-1" data-index="3">
+      <div class="cert-inner">
+        <div class="cert-ribbon"><span>2020</span></div>
+        <div class="cert-img-wrap">
+          <img src="img/cert4.jpg" alt="Xalqaro konferensiya" class="cert-img" loading="lazy">
+          <div class="cert-overlay">
+            <button class="cert-zoom-btn" aria-label="Kattalashtirish">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="cert-info">
+          <div class="cert-org">IDF — Xalqaro diabet federatsiyasi</div>
+          <h3 class="cert-name">Konferensiya ishtirokchisi</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-                <div class="contact-form reveal reveal-delay-2">
-                    <h3 data-i18n="form.title">Qabul uchun ariza</h3>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name" data-i18n="form.name"
-                                >Ism familiya</label
-                            >
-                            <input
-                                type="text"
-                                id="name"
-                                name="name"
-                                placeholder="Abdullayev Ali"
-                                autocomplete="name"
-                                required
-                            />
-                        </div>
-                        <div class="form-group">
-                            <label for="phone" data-i18n="form.phone"
-                                >Telefon</label
-                            >
-                            <input
-                                type="tel"
-                                id="phone"
-                                name="phone"
-                                placeholder="+998 90 000 00 00"
-                                autocomplete="tel"
-                                required
-                            />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="service" data-i18n="form.service"
-                            >Xizmat turi</label
-                        >
-                        <select
-                            id="service"
-                            name="service"
-                            data-i18n-select="form.services"
-                        ></select>
-                    </div>
-                    <div class="form-group">
-                        <label for="date" data-i18n="form.date"
-                            >Qulay sana</label
-                        >
-                        <input type="date" id="date" name="date" />
-                    </div>
-                    <div class="form-group">
-                        <label for="message" data-i18n="form.message"
-                            >Qo'shimcha ma'lumot</label
-                        >
-                        <textarea
-                            id="message"
-                            name="message"
-                            data-i18n-placeholder="form.messagePh"
-                            placeholder="Shikoyat yoki savollaringizni yozing..."
-                        ></textarea>
-                    </div>
-                    <button
-                        type="button"
-                        class="btn-submit"
-                        id="submitBtn"
-                        onclick="handleSubmit()"
-                        data-i18n="form.submit"
-                    >
-                        Arizani yuborish
-                    </button>
-                </div>
-            </div>
-        </section>
+<!-- CERTIFICATE LIGHTBOX -->
+<div class="cert-lightbox" id="certLightbox" role="dialog" aria-modal="true" aria-label="Sertifikat ko'rish">
+  <button class="cert-lb-close" id="certLbClose" aria-label="Yopish">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+  </button>
+  <button class="cert-lb-prev" id="certLbPrev" aria-label="Oldingi">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+  </button>
+  <div class="cert-lb-img-wrap">
+    <img src="" alt="" class="cert-lb-img" id="certLbImg">
+  </div>
+  <button class="cert-lb-next" id="certLbNext" aria-label="Keyingi">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+  </button>
+  <div class="cert-lb-info" id="certLbInfo"></div>
+</div>
 
-        <!-- MAP -->
-        <section id="map-section" role="region" aria-labelledby="map-heading">
-            <div
-                style="
-                    text-align: center;
-                    max-width: 600px;
-                    margin: 0 auto 40px;
-                "
-            >
-                <div class="section-tag reveal">Manzil</div>
-                <h2
-                    class="section-title reveal reveal-delay-1"
-                    id="map-heading"
-                >
-                    Bizni <em>xaritada toping</em>
-                </h2>
-                <p
-                    class="section-lead reveal reveal-delay-2"
-                    style="margin: 0 auto"
-                >
-                    Toshkent, Chilonzor tumani — "Complex Med klinikasi"
-                </p>
-            </div>
-            <div class="map-wrapper reveal">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24692.722076485534!2d69.17934041020423!3d41.28474509058524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0026a1be7b%3A0x78beb1bec6d85047!2sAllergolog%20-%20Xushnud%20Ahmedov!5e1!3m2!1sru!2s!4v1778134880160!5m2!1sru!2s"
-                    width="100%" height="420"
-                    style="border: 0"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                    title="Salomatlik tibbiyot markazi manzili"
-                ></iframe>
+<!-- TESTIMONIALS -->
+<section id="testimonials" role="region" aria-labelledby="test-heading">
+  <div class="section-tag reveal">Bemorlar fikri</div>
+  <h2 class="section-title reveal reveal-delay-1" id="test-heading">Ular nima <em>deydi?</em></h2>
+  <div class="testimonials-track" role="list">
+    <div class="testimonial-card reveal" role="listitem">
+      <div class="stars" aria-label="5 yulduz">★★★★★</div>
+      <p class="testimonial-text">"Dr. Dildora menga diabet bilan kurashishni o'rgatdi. Faqat dori emas, hayot tarzimni to'liq o'zgartirdik. Bir yil ichida qandim normallashdi."</p>
+      <div class="testimonial-author">
+        <div class="t-avatar" aria-hidden="true">SM</div>
+        <div>
+          <div class="t-name">Sardor M.</div>
+          <div class="t-detail">Diabet, 2-tur · 2023</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card reveal reveal-delay-1" role="listitem">
+      <div class="stars" aria-label="5 yulduz">★★★★★</div>
+      <p class="testimonial-text">"Qalqonsimon bez muammom bor edi, ko'p shifokorlar noto'g'ri tashxis qo'yishgan. Dildora xonim birinchi qabuldayoq to'g'ri tashxis qo'ydi."</p>
+      <div class="testimonial-author">
+        <div class="t-avatar" aria-hidden="true">NK</div>
+        <div>
+          <div class="t-name">Nodira K.</div>
+          <div class="t-detail">Gipotireoz · 2024</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card reveal reveal-delay-2" role="listitem">
+      <div class="stars" aria-label="5 yulduz">★★★★★</div>
+      <p class="testimonial-text">"PCOS tashxisi bilan 3 yil qiynalganman. Bu shifokor nafaqat dori, balki to'liq hayot rejimi tuzib berdi. Endilikda ancha yaxshiman."</p>
+      <div class="testimonial-author">
+        <div class="t-avatar" aria-hidden="true">ZA</div>
+        <div>
+          <div class="t-name">Zulfiya A.</div>
+          <div class="t-detail">PCOS · 2024</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-                <a
-                    href="https://maps.app.goo.gl/gDVRov6oBf4AxbdL8"
-                    target="_blank"
-                    rel="noopener"
-                    class="map-open-btn"
-                >
-                    <svg
-                        viewBox="0 0 24 24"
-                        width="18"
-                        height="18"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                    >
-                        <path
-                            d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
-                        />
-                        <circle cx="12" cy="10" r="3" />
-                    </svg>
-                    Google Maps da ochish
-                </a>
-            </div>
-        </section>
+<!-- CONTACT -->
+<section id="contact" role="region" aria-labelledby="contact-heading">
+  <div class="contact-grid">
+    <div>
+      <div class="section-tag reveal" data-i18n="contact.tag">Bog'lanish</div>
+      <h2 class="section-title reveal reveal-delay-1" id="contact-heading" data-i18n-html="contact.title">Qabulga <em>yoziling</em></h2>
+      <p class="section-lead reveal reveal-delay-2" data-i18n="contact.lead">Birinchi qadamni bosing — sog'lig'ingiz uchun to'g'ri qaror.</p>
 
-        <!-- FOOTER -->
-        <footer role="contentinfo">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a
-                        class="nav-logo"
-                        href="#hero"
-                        style="
-                            text-decoration: none;
-                            display: flex;
-                            align-items: center;
-                            gap: 12px;
-                        "
-                    >
-                        <div
-                            class="nav-logo-icon"
-                            style="background: rgba(255, 255, 255, 0.15)"
-                        >
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <path
-                                    d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2zm0 2v16M4 12h16"
-                                    stroke="white"
-                                    fill="none"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                />
-                            </svg>
-                        </div>
-                        <span class="nav-logo-text" style="color: white"
-                            >Dr. Dildora
-                            <span style="color: var(--gold)"
-                                >Xasanovna</span
-                            ></span
-                        >
-                    </a>
-                    <p>
-                        Toshkentdagi tajribali endokrinolog. Sog'lig'ingiz uchun
-                        to'g'ri qaror — bu yerdan boshlanadi.
-                    </p>
-                    <div class="social-links" style="margin-top: 20px">
-                        <a
-                            href="https://instagram.com/dr.endokrinolog.dildora"
-                            target="_blank"
-                            rel="noopener"
-                            class="social-link"
-                            aria-label="Instagram"
-                        >
-                            <svg viewBox="0 0 24 24">
-                                <rect
-                                    x="2"
-                                    y="2"
-                                    width="20"
-                                    height="20"
-                                    rx="5"
-                                    ry="5"
-                                />
-                                <path
-                                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
-                                />
-                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                            </svg>
-                        </a>
-                        <a
-                            href="https://t.me/dr_dildora_xasanovna"
-                            target="_blank"
-                            rel="noopener"
-                            class="social-link"
-                            aria-label="Telegram"
-                        >
-                            <svg viewBox="0 0 24 24">
-                                <path
-                                    d="M21.198 2.433a2.242 2.242 0 0 0-1.022.215l-15.5 6.5a2.25 2.25 0 0 0 .137 4.216l3.677.944 2.062 5.953c.16.46.575.75 1.052.75.388 0 .746-.183.97-.488l2.168-2.908 4.141 3.117a2.25 2.25 0 0 0 3.47-1.423l2.5-14.5a2.25 2.25 0 0 0-2.655-2.376z"
-                                />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h4>Sahifalar</h4>
-                    <ul>
-                        <li><a href="#about">Shifokor haqida</a></li>
-                        <li>
-                            <a href="#specializations"
-                                >Mutaxassislik sohalari</a
-                            >
-                        </li>
-                        <li><a href="#experience">Ta'lim va tajriba</a></li>
-                        <li><a href="#services">Xizmatlar</a></li>
-                        <li><a href="#testimonials">Bemorlar fikri</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Bog'lanish</h4>
-                    <ul>
-                        <li>
-                            <a href="tel:+998901234567">+998 90 949 60 30</a>
-                        </li>
-                        <!-- <li><a href="mailto:dildora.xasanovna@gmail.com">dildora.xasanovna@gmail.com</a></li> -->
-                        <li><a href="#">Toshkent, Chilonzor</a></li>
-                        <li><a href="#">Du–Sha: 09:00–18:00</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>
-                    © 2026 Dr. Dildora Xasanovna. Barcha huquqlar himoyalangan.
-                </p>
-                <p>Toshkent, O'zbekiston</p>
-            </div>
-        </footer>
+      <div class="contact-info-item reveal">
+        <div class="contact-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.12 6.12l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <div>
+          <div class="contact-info-label">Telefon</div>
+          <div class="contact-info-value"><a href="tel:+998901234567">+998 90 949 60 30</a></div>
+        </div>
+      </div>
+      <div class="contact-info-item reveal reveal-delay-1">
+        <div class="contact-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </div>
+        <div>
+          <div class="contact-info-label">Instagram</div>
+          <div class="contact-info-value"><a href="https://instagram.com/dr.endokrinolog.dildora" target="_blank" rel="noopener">@dr.endokrinolog.dildora</a></div>
+        </div>
+      </div>
+      <div class="contact-info-item reveal reveal-delay-3">
+        <div class="contact-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M21.198 2.433a2.242 2.242 0 0 0-1.022.215l-15.5 6.5a2.25 2.25 0 0 0 .137 4.216l3.677.944 2.062 5.953c.16.46.575.75 1.052.75.388 0 .746-.183.97-.488l2.168-2.908 4.141 3.117a2.25 2.25 0 0 0 3.47-1.423l2.5-14.5a2.25 2.25 0 0 0-2.655-2.376z"/></svg>
+        </div>
+        <div>
+          <div class="contact-info-label">Telegram</div>
+          <div class="contact-info-value"><a href="https://t.me/dr_dildora_xasanovna" target="_blank" rel="noopener">@dr_dildora_xasanovna</a></div>
+        </div>
+      </div>
+      <div class="contact-info-item reveal reveal-delay-2">
+        <div class="contact-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div>
+          <div class="contact-info-label">Manzil</div>
+          <div class="contact-info-value">Toshkent, Chilonzor tumani<br>"Complex Med klinikasi" </div>
+        </div>
+      </div>
+    </div>
 
-        <script src="main.js"></script>
-    </body>
+    <div class="contact-form reveal reveal-delay-2">
+      <h3 data-i18n="form.title">Qabul uchun ariza</h3>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name" data-i18n="form.name">Ism familiya</label>
+          <input type="text" id="name" name="name" placeholder="Abdullayev Ali" autocomplete="name" required>
+        </div>
+        <div class="form-group">
+          <label for="phone" data-i18n="form.phone">Telefon</label>
+          <input type="tel" id="phone" name="phone" placeholder="+998 90 000 00 00" autocomplete="tel" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="service" data-i18n="form.service">Xizmat turi</label>
+        <select id="service" name="service" data-i18n-select="form.services"></select>
+      </div>
+      <div class="form-group">
+        <label for="date" data-i18n="form.date">Qulay sana</label>
+        <input type="date" id="date" name="date">
+      </div>
+      <div class="form-group">
+        <label for="message" data-i18n="form.message">Qo'shimcha ma'lumot</label>
+        <textarea id="message" name="message" data-i18n-placeholder="form.messagePh" placeholder="Shikoyat yoki savollaringizni yozing..."></textarea>
+      </div>
+      <button type="button" class="btn-submit" id="submitBtn" onclick="handleSubmit()" data-i18n="form.submit">Arizani yuborish</button>
+    </div>
+  </div>
+</section>
+
+<!-- MAP -->
+<section id="map-section" role="region" aria-labelledby="map-heading">
+  <div style="text-align:center;max-width:600px;margin:0 auto 40px;">
+    <div class="section-tag reveal">Manzil</div>
+    <h2 class="section-title reveal reveal-delay-1" id="map-heading">Bizni <em>xaritada toping</em></h2>
+    <p class="section-lead reveal reveal-delay-2" style="margin:0 auto;">Toshkent, Chilonzor tumani — "Complex Med klinikasi"</p>
+  </div>
+  <div class="map-wrapper reveal">
+    <iframe
+      src="https://maps.google.com/maps?q=75RV%2B57P+Tashkent&z=17&output=embed"
+      width="100%" height="420"
+      style="border:0;border-radius:20px;display:block;"
+      allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Salomatlik tibbiyot markazi manzili">
+    </iframe>
+    <a href="https://maps.app.goo.gl/gDVRov6oBf4AxbdL8" target="_blank" rel="noopener" class="map-open-btn">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      Google Maps da ochish
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer role="contentinfo">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a class="nav-logo" href="#hero" style="text-decoration:none;display:flex;align-items:center;gap:12px;">
+        <div class="nav-logo-icon" style="background:rgba(255,255,255,0.15);">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2zm0 2v16M4 12h16" stroke="white" fill="none" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <span class="nav-logo-text" style="color:white;">Dr. Dildora <span style="color:var(--gold)">Xasanovna</span></span>
+      </a>
+      <p>Toshkentdagi tajribali endokrinolog. Sog'lig'ingiz uchun to'g'ri qaror — bu yerdan boshlanadi.</p>
+      <div class="social-links" style="margin-top:20px;">
+        <a href="https://instagram.com/dr.endokrinolog.dildora" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="https://t.me/dr_dildora_xasanovna" target="_blank" rel="noopener" class="social-link" aria-label="Telegram">
+          <svg viewBox="0 0 24 24"><path d="M21.198 2.433a2.242 2.242 0 0 0-1.022.215l-15.5 6.5a2.25 2.25 0 0 0 .137 4.216l3.677.944 2.062 5.953c.16.46.575.75 1.052.75.388 0 .746-.183.97-.488l2.168-2.908 4.141 3.117a2.25 2.25 0 0 0 3.47-1.423l2.5-14.5a2.25 2.25 0 0 0-2.655-2.376z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Sahifalar</h4>
+      <ul>
+        <li><a href="#about">Shifokor haqida</a></li>
+        <li><a href="#specializations">Mutaxassislik sohalari</a></li>
+        <li><a href="#experience">Ta'lim va tajriba</a></li>
+        <li><a href="#services">Xizmatlar</a></li>
+        <li><a href="#testimonials">Bemorlar fikri</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Bog'lanish</h4>
+      <ul>
+        <li><a href="tel:+998901234567">+998 90 949 60 30</a></li>
+        <!-- <li><a href="mailto:dildora.xasanovna@gmail.com">dildora.xasanovna@gmail.com</a></li> -->
+        <li><a href="#">Toshkent, Chilonzor</a></li>
+        <li><a href="#">Du–Sha: 09:00–18:00</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Dr. Dildora Xasanovna. Barcha huquqlar himoyalangan.</p>
+    <p>Toshkent, O'zbekiston</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
 </html>
