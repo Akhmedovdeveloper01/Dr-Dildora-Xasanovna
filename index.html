@@ -256,11 +256,17 @@
             <div class="hero-visual" aria-hidden="true">
                 <div class="hero-photo-ring"></div>
                 <div class="hero-photo-frame">
-                    <img
-                        src="img/_USH2810.jpg"
-                        alt="Dr. Dildora Xasanovna"
-                        class="hero-photo-img"
-                    />
+                    <picture>
+                        <source srcset="img/_USH2810.webp" type="image/webp" />
+                        <img
+                            src="img/_USH2810.jpg"
+                            alt="Dr. Dildora Xasanovna"
+                            class="hero-photo-img"
+                            width="390"
+                            height="585"
+                            fetchpriority="high"
+                        />
+                    </picture>
                     <div class="hero-photo-overlay"></div>
                 </div>
 
@@ -347,16 +353,28 @@
                     >
                         <div class="about-carousel">
                             <div class="carousel-track">
-                                <img
-                                    src="img/_USH2810.jpg"
-                                    alt="Dr. Dildora Xasanovna"
-                                    class="carousel-img active"
-                                />
-                                <img
-                                    src="img/_USH2999.jpg"
-                                    alt="Dr. Dildora Xasanovna"
-                                    class="carousel-img"
-                                />
+                                <picture>
+                                    <source srcset="img/_USH2810.webp" type="image/webp" />
+                                    <img
+                                        src="img/_USH2810.jpg"
+                                        alt="Dr. Dildora Xasanovna"
+                                        class="carousel-img active"
+                                        width="390"
+                                        height="585"
+                                        loading="lazy"
+                                    />
+                                </picture>
+                                <picture>
+                                    <source srcset="img/_USH2999.webp" type="image/webp" />
+                                    <img
+                                        src="img/_USH2999.jpg"
+                                        alt="Dr. Dildora Xasanovna"
+                                        class="carousel-img"
+                                        width="390"
+                                        height="585"
+                                        loading="lazy"
+                                    />
+                                </picture>
                             </div>
                             <button
                                 class="carousel-btn carousel-prev"
@@ -816,6 +834,8 @@
                                 src="img/cert1.jpg"
                                 alt="ESE Sertifikat"
                                 class="cert-img"
+                                width="600"
+                                height="420"
                                 loading="lazy"
                             />
                             <div class="cert-overlay">
@@ -856,6 +876,8 @@
                                 src="img/cert2.jpg"
                                 alt="TTA Dotsent sertifikati"
                                 class="cert-img"
+                                width="600"
+                                height="420"
                                 loading="lazy"
                             />
                             <div class="cert-overlay">
@@ -894,6 +916,8 @@
                                 src="img/cert3.jpg"
                                 alt="RIIATM sertifikat"
                                 class="cert-img"
+                                width="600"
+                                height="420"
                                 loading="lazy"
                             />
                             <div class="cert-overlay">
@@ -932,6 +956,8 @@
                                 src="img/cert4.jpg"
                                 alt="Xalqaro konferensiya"
                                 class="cert-img"
+                                width="600"
+                                height="420"
                                 loading="lazy"
                             />
                             <div class="cert-overlay">
@@ -995,7 +1021,7 @@
                 </svg>
             </button>
             <div class="cert-lb-img-wrap">
-                <img src="" alt="" class="cert-lb-img" id="certLbImg" />
+                <img src="" alt="" class="cert-lb-img" id="certLbImg" width="800" height="560" />
             </div>
             <button class="cert-lb-next" id="certLbNext" aria-label="Keyingi">
                 <svg
