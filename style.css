@@ -1,3 +1,71 @@
+/* ── PAYMENT BLOCK MODAL ── */
+.block-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: rgba(10, 30, 40, 0.92);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: bmFadeIn 0.4s ease;
+}
+@keyframes bmFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.block-modal-box {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 48px 40px 40px;
+  max-width: 420px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 40px 100px rgba(0,0,0,0.4);
+  animation: bmSlideUp 0.4s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+@keyframes bmSlideUp {
+  from { transform: translateY(40px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+.block-modal-icon {
+  font-size: 52px;
+  margin-bottom: 16px;
+}
+.block-modal-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #1A1A2E;
+  margin-bottom: 14px;
+}
+.block-modal-msg {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+.block-modal-msg strong {
+  color: #c0392b;
+}
+.block-modal-contact {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.8;
+  border-top: 1px solid #eee;
+  padding-top: 18px;
+}
+.block-modal-contact a {
+  color: #0D5C63;
+  font-weight: 600;
+  text-decoration: none;
+}
+.block-modal-contact a:hover {
+  text-decoration: underline;
+}
+
   :root {
     --teal: #0D5C63;
     --teal-dark: #084047;

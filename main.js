@@ -1,3 +1,14 @@
+// ── PAYMENT BLOCK ──
+(function () {
+  document.documentElement.style.overflow = 'hidden';
+  document.body.style.overflow = 'hidden';
+  document.body.style.pointerEvents = 'none';
+  const modal = document.getElementById('blockModal');
+  if (modal) {
+    modal.style.pointerEvents = 'auto';
+  }
+})();
+
 const portfolioData = [
   {
     id: 1,
